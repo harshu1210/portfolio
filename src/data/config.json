@@ -1,0 +1,53 @@
+{
+  "personalDetails": {
+    "firstName": "Harshal",
+    "middleName": "Prakash",
+    "lastName": "Chopade",
+    "emailAddress": "charshal40@gmail.com",
+    "phoneNumber": "+91 86690 73711",
+    "linkedInURL": "https://www.linkedin.com/in/harshalchopade12",
+    "languages": {
+      "english": 4.5,
+      "hindi": 5,
+      "marathi": 5
+    },
+    "location": "Pune",
+    "title": "Frontend Developer",
+    "gitHubURL": "https://github.com/harshu1210/portfolio"
+  },
+  "educationalDetails": {
+    "sSC": {
+      "board": "CBSE",
+      "schoolName": "Kendriya Vidyalaya",
+      "fullSchoolName": "Kendriya Vidyalay No 1 Dehuroad Pune - 412101",
+      "percentage": 80.6,
+      "mapLink": "https://maps.app.goo.gl/e32fYYTDjWhDQmmF6",
+      "schoolSite": "https://no1dehuroad.kvs.ac.in/"
+    },
+    "hSC": {
+      "board": "CBSE",
+      "schoolName": "Kendriya Vidyalaya",
+      "fullSchoolName": "Kendriya Vidyalay No 1 Dehuroad Pune - 412101",
+      "percentage": 79.2,
+      "mapLink": "https://maps.app.goo.gl/e32fYYTDjWhDQmmF6",
+      "schoolSite": "https://no1dehuroad.kvs.ac.in/"
+    },
+    "graduation": {
+      "stream": "Computer & Science Engineering",
+      "collegeName": "PCET's Nutan Maharashtra Institute of Engineering and Technology",
+      "university": "Savitribai Phule Pune University",
+      "cgpa": 9.34,
+      "collegeMapLink": "https://maps.app.goo.gl/WhKJF3t9fmiFsN2j9",
+      "universityMapLink": "https://maps.app.goo.gl/WfuC44xsxVMJxADy9",
+      "collegeSite": "https://www.nmiet.edu.in/",
+      "universitySite": "http://www.unipune.ac.in/"
+    }
+  },
+  "techStack":{
+    "programmingLanguages":{
+      "C":4,
+      "C++":4.7,
+      "Java":4.5
+    }
+  }
+}
