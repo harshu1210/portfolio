@@ -1,0 +1,21 @@
+<div id="mainContainer" class="container display-flex flex-direction-col">
+  <div id="navbar" class="container height10-per">
+
+  </div>
+  <div #container id="container" class="container height90-per display-flex"
+    [ngClass]="{ 'flex-direction-col-rev': position === 'bottom', 'flex-direction-row': position === 'left'}">
+    <div id="leftContainer" class="container" [style.height]="position=='bottom'?'110.5px':height+'px'"
+      [style.width]="position=='bottom'?width+'px':'110.5px'">
+      <div class="dock-window">
+        <p-dock [model]="menu" [position]="position">
+          <ng-template pTemplate="item" let-item>
+            <img [src]="item.icon" [alt]="item.label" width="100%" [style.border-radius]="item.label=='GitHub'?'100px':'0px'" [style.background-color]="item.label=='GitHub'?'white':''" />
+          </ng-template>
+        </p-dock>
+      </div>
+    </div>
+    <div id="rightContainer" class="container" [style.width]="width+'px'" [style.height]="height+'px'">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

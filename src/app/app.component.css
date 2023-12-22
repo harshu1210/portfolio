@@ -1,0 +1,30 @@
+.container {
+  height: 100%;
+  width: 100%;
+  margin: 0%;
+  padding: 0%;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.flex-direction-row {
+  flex-direction: row;
+}
+
+.flex-direction-col {
+  flex-direction: column;
+}
+
+.flex-direction-col-rev {
+  flex-direction: column-reverse;
+}
+
+.height10-per {
+  height: 10%;
+}
+
+.height90-per {
+  height: 90%;
+}
