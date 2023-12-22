@@ -1,4 +1,26 @@
 {
+  "menuItems":[
+    {
+      "label": "Home",
+      "routerLink": "/home"
+    },
+    {
+      "label": "Work Experience",
+      "routerLink": "/work"
+    },
+    {
+      "label": "Projects",
+      "routerLink":"/projects"
+    },
+    {
+      "label": "TechStack",
+      "routerLink":"/techStack"
+    },
+    {
+      "label": "Education",
+      "routerLink":"/education"
+    }
+  ],
   "dockMenu": [
     {
       "label": "linkedIn",
