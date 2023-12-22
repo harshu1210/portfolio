@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ButtonModule } from 'primeng/button';
 import { DockModule } from 'primeng/dock';
+import { MenubarModule } from 'primeng/menubar';
 import { HomeComponent } from './home/home.component';
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { HomeComponent } from './home/home.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     ButtonModule,
-    DockModule
+    DockModule,
+    MenubarModule
   ],
   providers: [
     provideClientHydration()

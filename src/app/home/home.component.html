@@ -1,7 +1,8 @@
 <div id="container">
   <div id="profile">
     <img src="../../assets/images/harshal.png" />
-    <h2 id="name" #name></h2>
+    <h2 *ngIf="!flag" id="name" #name>Harshal Chopade...</h2>
+    <h2 *ngIf="flag" id="name" #name></h2>
   </div>
   <div id="tagline">
     <span class="description">Greetings! I'm an enthusiastic Software Engineer infusing innovation into each line of

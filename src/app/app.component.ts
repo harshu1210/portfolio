@@ -1,6 +1,7 @@
 import { AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild } from '@angular/core';
 import { MenuItem } from 'primeng/api';
 import * as CONFIG from '../assets/data/config.json';
+import { CommonService } from './services/common/common.service';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -12,10 +13,33 @@ export class AppComponent implements OnInit, AfterViewInit {
   position: 'bottom' | 'top' | 'left' | 'right' = 'left';
   height: any;
   width: any;
+  items: MenuItem[] | undefined;
 
+  constructor(private commonService: CommonService) {
+    this.commonService.setFlag(true);
+  }
   @ViewChild('container', { static: false }) container!: ElementRef;
 
   ngOnInit() {
+    this.items = [
+      {
+        label: 'Home',
+        routerLink: '/home'
+      },
+      {
+        label: 'Work',
+        routerLink: '/'
+      },
+      {
+        label: 'Projects',
+      },
+      {
+        label: 'TechStack',
+      },
+      {
+        label: 'Quit',
+      }
+    ];
     for (let i = 0; i < CONFIG.dockMenu.length; i++) {
       const decodedUrl = atob(CONFIG.dockMenu[i].link);
       CONFIG.dockMenu[i].link = decodeURIComponent(decodedUrl);

@@ -1,4 +1,5 @@
-import { AfterViewInit, Component, ElementRef, NgZone, OnInit, Renderer2, ViewChild } from '@angular/core';
+import { CommonService } from './../services/common/common.service';
+import { AfterViewInit, Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'home',
@@ -10,18 +11,19 @@ export class HomeComponent implements OnInit, AfterViewInit {
   i = 0;
   txt = 'Harshal Chopade...';
   speed = 65;
+  flag!: boolean;
 
-  @ViewChild('name', { static: false }) name!: ElementRef;
-
-  constructor(private renderer: Renderer2, private zone: NgZone) {
-
+  constructor(private commonService: CommonService) {
+    this.flag = this.commonService.getFlag();
   }
+
   ngOnInit(): void {
-    this.typeWriter();
   }
 
   ngAfterViewInit() {
-    this.typeWriter();
+    if (this.flag) {
+      this.typeWriter();
+    }
   }
 
   typeWriter() {
@@ -29,6 +31,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
     if (nameElement && this.i < this.txt.length) {
       nameElement.innerHTML += this.txt.charAt(this.i);
       this.i++;
+      this.commonService.setFlag(false);
       setTimeout(() => this.typeWriter(), this.speed);
     }
   }

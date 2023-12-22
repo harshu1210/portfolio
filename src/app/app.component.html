@@ -1,6 +1,8 @@
 <div id="mainContainer" class="container display-flex flex-direction-col">
   <div id="navbar" class="container height10-per">
-
+    <div class="card">
+      <p-menubar [model]="items"></p-menubar>
+    </div>
   </div>
   <div #container id="container" class="container height90-per display-flex"
     [ngClass]="{ 'flex-direction-col-rev': position === 'bottom', 'flex-direction-row': position === 'left'}">

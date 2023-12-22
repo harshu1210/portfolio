@@ -43,4 +43,5 @@
 
 .description {
   transition: width 1s cubic-bezier(0.39, 0.58, 0.57, 1);
+  font-size: medium;
 }
