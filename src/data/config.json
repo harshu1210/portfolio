@@ -6,33 +6,54 @@
     "emailAddress": "charshal40@gmail.com",
     "phoneNumber": "+91 86690 73711",
     "linkedInURL": "https://www.linkedin.com/in/harshalchopade12",
-    "languages": {
-      "english": 4.5,
-      "hindi": 5,
-      "marathi": 5
-    },
+    "languages": [
+      {
+        "name":"English",
+        "proficient":4.5
+      },
+      {
+        "name":"Hindi",
+        "proficient":4.5
+      },
+      {
+        "name":"Marathi",
+        "proficient":4.5
+      }
+    ],
     "location": "Pune",
     "title": "Frontend Developer",
     "gitHubURL": "https://github.com/harshu1210/portfolio"
   },
   "educationalDetails": {
     "sSC": {
+      "startDate": "Apr 2015",
+      "endDate": "Jun 2016",
       "board": "CBSE",
       "schoolName": "Kendriya Vidyalaya",
       "fullSchoolName": "Kendriya Vidyalay No 1 Dehuroad Pune - 412101",
       "percentage": 80.6,
       "mapLink": "https://maps.app.goo.gl/e32fYYTDjWhDQmmF6",
-      "schoolSite": "https://no1dehuroad.kvs.ac.in/"
+      "schoolSite": "https://no1dehuroad.kvs.ac.in/",
+      "activitesAndSocities": ["Football","Volleyball"],
+      "description": null,
+      "skill": null
     },
     "hSC": {
+      "startDate": "Apr 2017",
+      "endDate": "Jun 2018",
       "board": "CBSE",
       "schoolName": "Kendriya Vidyalaya",
       "fullSchoolName": "Kendriya Vidyalay No 1 Dehuroad Pune - 412101",
       "percentage": 79.2,
       "mapLink": "https://maps.app.goo.gl/e32fYYTDjWhDQmmF6",
-      "schoolSite": "https://no1dehuroad.kvs.ac.in/"
+      "schoolSite": "https://no1dehuroad.kvs.ac.in/",
+      "activitesAndSocities": ["Football","Volleyball"],
+      "description": "I was from PCM Group i.e, Physics, Chemistry and Mathematics, along with that I was having Computer Science which was consisting of C++ and MySQL, and English.I was from PCM Group i.e, Physics, Chemistry and Mathematics, along with that I was having Computer Science which was consisting of C++ and MySQL, and English.",
+      "skill": ["C (Programming Language)","C++","MySQL"]
     },
     "graduation": {
+      "startDate": "Jul 2018",
+      "endDate": "Jun 2022",
       "stream": "Computer & Science Engineering",
       "collegeName": "PCET's Nutan Maharashtra Institute of Engineering and Technology",
       "university": "Savitribai Phule Pune University",
@@ -40,14 +61,210 @@
       "collegeMapLink": "https://maps.app.goo.gl/WhKJF3t9fmiFsN2j9",
       "universityMapLink": "https://maps.app.goo.gl/WfuC44xsxVMJxADy9",
       "collegeSite": "https://www.nmiet.edu.in/",
-      "universitySite": "http://www.unipune.ac.in/"
+      "universitySite": "http://www.unipune.ac.in/",
+      "activitesAndSocities": ["Football","Volleyball","Team Technothon"],
+      "description": "Computer engineering combines electrical engineering, computer science, and mathematics to design and develop computer systems, hardware, and software. Computer engineers design hardware components, such as processors, memory systems, and input/output devices, and develop software applications for a variety of platforms and systems. They conduct research and testing to evaluate the performance and efficiency of computer systems, work collaboratively with others to develop new products and technologies and troubleshoot and debug computer systems. Computer engineers must also ensure that computer systems are secure and meet regulatory standards.",
+      "skill": ["Machine Learning","Databases","Cloud Computing","Data Structures","Python (Programming Language)","TensorFlow","MySQL","HTML5","Cascading Style Sheets (CSS)","JavaScript","Web Development","C (Programming Language)","C++","Engineering","Java","Database Management System (DBMS)","PHP"
+      ]
     }
   },
-  "techStack":{
-    "programmingLanguages":{
-      "C":4,
-      "C++":4.7,
-      "Java":4.5
+  "skills": [
+    {
+      "title": "Programming Language",
+      "techstack": [
+        {
+          "name": "C",
+          "level": 4
+        },
+        {
+          "name": "C++",
+          "level": 4.7
+        },
+        {
+          "name": "Java",
+          "level": 4.5
+        },
+        {
+          "name": "Python",
+          "level": 3.5
+        }
+      ]
+    },
+    {
+      "title": "Front-End",
+      "techstack": [
+        {
+          "name": "HTML5",
+          "level": 5
+        },
+        {
+          "name": "CSS3",
+          "level": 5
+        },
+        {
+          "name": "SASS",
+          "level": 5
+        },
+        {
+          "name": "JavaScript",
+          "level": 5
+        },
+        {
+          "name": "TypeScript",
+          "level": 5
+        },
+        {
+          "name": "Web Components",
+          "level": 5
+        }
+      ]
+    },
+    {
+      "title": "Backend",
+      "techstack": [
+        {
+          "name": "Rest API's",
+          "level": 5
+        },
+        {
+          "name": "Spring Boot",
+          "level": 5
+        },
+        {
+          "name": "Spring Data JPA",
+          "level": 5
+        }
+      ]
+    },
+    {
+      "title": "DataBase",
+      "techstack": [
+        {
+          "name": "MySQL",
+          "level": 5
+        },
+        {
+          "name": "Oracle DataBase",
+          "level": 5
+        },
+        {
+          "name": "PostgreSQL",
+          "level": 5
+        }
+      ]
+    },
+    {
+      "title": "FrameWorks",
+      "techstack": [
+        {
+          "name": "HighCharts",
+          "level": 5
+        },
+        {
+          "name": "AmCharts",
+          "level": 5
+        },
+        {
+          "name": "Material UI",
+          "level": 5
+        },
+        {
+          "name": "BootStrap",
+          "level": 5
+        },
+        {
+          "name": "PrimeNG",
+          "level": 5
+        },
+        {
+          "name": "MappedIn",
+          "level": 5
+        }
+      ]
+    },
+    {
+      "title": "Package Manager",
+      "techstack": [
+        {
+          "name": "NPM",
+          "level": 5
+        },
+        {
+          "name": "Yarn",
+          "level": 5
+        },
+        {
+          "name": "PIP",
+          "level": 5
+        },
+        {
+          "name": "Conda",
+          "level": 5
+        },
+        {
+          "name": "Maven",
+          "level": 5
+        }
+      ]
+    },
+    {
+      "title": "DevOps",
+      "techstack": [
+        {
+          "name": "Git",
+          "level": 5
+        },
+        {
+          "name": "GitLab",
+          "level": 5
+        },
+        {
+          "name": "Docker",
+          "level": 5
+        },
+        {
+          "name": "Microsft Teams",
+          "level": 5
+        }
+      ]
+    },
+    {
+      "title": "Operating Systems",
+      "techstack": [
+        {
+          "name": "Windows",
+          "level": 5
+        },
+        {
+          "name": "MacOS",
+          "level": 5
+        },
+        {
+          "name": "UBUNTU",
+          "level": 5
+        },
+        {
+          "name": "Linux",
+          "level": 5
+        }
+      ]
+    },
+    {
+      "title": "Integrated Development Environment",
+      "techstack": [
+        {
+          "name": "VsCode",
+          "level": 5
+        },
+        {
+          "name": "PyCharm",
+          "level": 5
+        },
+        {
+          "name": "Eclipse",
+          "level": 5
+        }
+      ]
     }
-  }
+  ]
 }
