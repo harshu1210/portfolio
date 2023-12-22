@@ -21,25 +21,7 @@ export class AppComponent implements OnInit, AfterViewInit {
   @ViewChild('container', { static: false }) container!: ElementRef;
 
   ngOnInit() {
-    this.items = [
-      {
-        label: 'Home',
-        routerLink: '/home'
-      },
-      {
-        label: 'Work',
-        routerLink: '/'
-      },
-      {
-        label: 'Projects',
-      },
-      {
-        label: 'TechStack',
-      },
-      {
-        label: 'Quit',
-      }
-    ];
+    this.items = CONFIG.menuItems;
     for (let i = 0; i < CONFIG.dockMenu.length; i++) {
       const decodedUrl = atob(CONFIG.dockMenu[i].link);
       CONFIG.dockMenu[i].link = decodeURIComponent(decodedUrl);
