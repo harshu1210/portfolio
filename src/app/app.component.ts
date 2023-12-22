@@ -1,6 +1,6 @@
 import { AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild } from '@angular/core';
 import { MenuItem } from 'primeng/api';
-
+import * as CONFIG from '../assets/config.json';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -16,24 +16,15 @@ export class AppComponent implements OnInit, AfterViewInit {
   @ViewChild('container', { static: false }) container!: ElementRef;
 
   ngOnInit() {
-    this.menu = [
-      {
-        label: 'linkedIn',
-        icon: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/2048px-LinkedIn_icon.svg.png'
-      },
-      {
-        label: 'GitHub',
-        icon: 'https://upload.wikimedia.org/wikipedia/commons/c/c2/GitHub_Invertocat_Logo.svg'
-      },
-      {
-        label: 'WhatsApp',
-        icon: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/767px-WhatsApp.svg.png'
-      },
-    ];
+    for (let i = 0; i < CONFIG.dockMenu.length; i++) {
+      const decodedUrl = atob(CONFIG.dockMenu[i].link);
+      CONFIG.dockMenu[i].link = decodeURIComponent(decodedUrl);
+    }
   }
 
   ngAfterViewInit() {
     this.getScreenOrientation()
+    this.menu = CONFIG.dockMenu;
   }
 
   @HostListener('window:resize', ['$event'])

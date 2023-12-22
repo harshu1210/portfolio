@@ -9,7 +9,9 @@
       <div class="dock-window">
         <p-dock [model]="menu" [position]="position">
           <ng-template pTemplate="item" let-item>
-            <img [src]="item.icon" [alt]="item.label" width="100%" [style.border-radius]="item.label=='GitHub'?'100px':'0px'" [style.background-color]="item.label=='GitHub'?'white':''" />
+            <a [href]="item.link" target="_blank">
+              <img [src]="item.icon" [alt]="item.label" width="100%" [style.border-radius]="item.label=='GitHub'?'100px':'0px'" [style.background-color]="item.label=='GitHub'?'white':''" />
+            </a>
           </ng-template>
         </p-dock>
       </div>

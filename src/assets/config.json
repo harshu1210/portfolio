@@ -1,0 +1,19 @@
+{
+  "dockMenu": [
+    {
+      "label": "linkedIn",
+      "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/2048px-LinkedIn_icon.svg.png",
+      "link": "aHR0cHMlM0ElMkYlMkZ3d3cubGlua2VkaW4uY29tJTJGaW4lMkZoYXJzaGFsY2hvcGFkZTEyJTJG"
+    },
+    {
+      "label": "GitHub",
+      "icon": "https://upload.wikimedia.org/wikipedia/commons/c/c2/GitHub_Invertocat_Logo.svg",
+      "link": "aHR0cHMlM0ElMkYlMkZnaXRodWIuY29tJTJGaGFyc2h1MTIxMA=="
+    },
+    {
+      "label": "WhatsApp",
+      "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/767px-WhatsApp.svg.png",
+      "link": "aHR0cHMlM0ElMkYlMkZ3YS5tZSUyRiUyQjkxODY2OTA3MzcxMQ=="
+    }
+  ]
+}
