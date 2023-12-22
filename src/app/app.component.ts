@@ -1,6 +1,6 @@
 import { AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild } from '@angular/core';
 import { MenuItem } from 'primeng/api';
-import * as CONFIG from '../assets/config.json';
+import * as CONFIG from '../assets/data/config.json';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
