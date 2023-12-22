@@ -1,0 +1,41 @@
+.container {
+  height: 100%;
+  width: 100%;
+  margin: 0%;
+  padding: 0%;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.flex-direction-row {
+  flex-direction: row;
+}
+
+.flex-direction-col {
+  flex-direction: column;
+}
+
+.flex-direction-col-rev {
+  flex-direction: column-reverse;
+}
+
+.height10-per {
+  height: 10%;
+}
+
+.height90-per {
+  height: 90%;
+}
+
+::ng-deep.p-menubar,
+::ng-deep.p-menubar-root-list {
+  background-color: black;
+  border: 1px solid black;
+}
+
+::ng-deep.p-dock,
+::ng-deep.p-dock-list-container {
+  border: 1px solid black;
+}
