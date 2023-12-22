@@ -30,12 +30,17 @@
 }
 
 ::ng-deep.p-menubar,
-::ng-deep.p-menubar-root-list {
+::ng-deep.p-menubar-root-list,
+::ng-deep.p-focus,
+::ng-deep.p-ripple,
+::ng-deep.p-element,
+::ng-deep.p-menuitem-link,
+::ng-deep.p-menuitem-link-active{
   background-color: black;
-  border: 1px solid black;
+  border: none;
 }
 
 ::ng-deep.p-dock,
 ::ng-deep.p-dock-list-container {
-  border: 1px solid black;
+  border: none;
 }
