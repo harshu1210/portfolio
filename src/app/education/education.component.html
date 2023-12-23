@@ -3,21 +3,43 @@
   <div class="card">
     <p-timeline [value]="events" align="left" styleClass="customized-timeline">
       <ng-template pTemplate="marker" let-event>
-        <span class="custom-marker shadow-2" [style.backgroundColor]="event.color">
+        <span class="custom-marker shadow-2" [style.color]="event.color">
           <i [ngClass]="event.icon"></i>
         </span>
       </ng-template>
       <ng-template pTemplate="content" let-event>
-        <p-card [header]="event.status" [subheader]="event.date">
-          <img *ngIf="event.image" [src]="'https://primefaces.org/cdn/primeng/images/demo/product/' + event.image"
-            [alt]="event.name" width="200" class="shadow-2" />
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae
-            numquam deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse,
-            cupiditate
-            neque quas!
-          </p>
-          <button pButton label="Read more" class="p-button-text"></button>
+        <p-card>
+          <ng-template pTemplate="header">
+            <div style="display:flex;">
+              <div style="margin: 10px;"><img alt="Card"
+                  style="width:100px;height: 100px;border-radius: 100px;position: relative;top: 50%;left: 50%;transform: translate(-50%,-50%);"
+                  [src]="event.schoolLogo" /></div>
+              <div style="display: flex;flex-direction: column;">
+                <div>
+                  <h2 style="margin-bottom: 0;">{{event.schoolName}}</h2>
+                </div>
+                <div>
+                  <h4 style="margin-bottom: 0;">{{event.startDate}} - {{event.endDate}}</h4>
+                </div>
+              </div>
+            </div>
+          </ng-template>
+          <ng-template pTemplate="content">
+            <div class="card-content">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae
+                numquam
+                deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse,
+                cupiditate neque
+                quas!
+              </p>
+            </div>
+          </ng-template>
+
+          <ng-template pTemplate="footer">
+            <p-button label="Save" icon="pi pi-check"></p-button>
+            <p-button label="Cancel" icon="pi pi-times"></p-button>
+          </ng-template>
         </p-card>
       </ng-template>
     </p-timeline>
