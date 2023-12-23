@@ -25,14 +25,15 @@
             </div>
           </ng-template>
           <ng-template pTemplate="content">
-            <div class="card-content">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae
-                numquam
-                deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse,
-                cupiditate neque
-                quas!
-              </p>
+            <div class="card-content" style="display: flex;flex-direction:column;">
+              <div style="align-items: center;display: flex;flex-direction: row;">
+                <div style="margin: 10px;">Skills</div>
+                <div class="card flex align-items-center gap-2 flex-wrap">
+                  <p-chip class="margin10" *ngFor="let item of event.skill"
+                          [label]="item.name" [image]="item.logo"></p-chip>
+                  <p-chip class="margin10" label="More" image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png"></p-chip>
+                </div>
+              </div>
             </div>
           </ng-template>
 
@@ -45,3 +46,5 @@
     </p-timeline>
   </div>
 </div>
+
+<!-- | slice:0:5 as any -->

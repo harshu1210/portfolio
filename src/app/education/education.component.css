@@ -15,3 +15,11 @@
   background-color: #333333;
 }
 
+.margin10{
+  margin: 10px;
+  background-color: #333333;
+}
+
+::ng-deep.p-chip{
+  background-color: black;
+}

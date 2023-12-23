@@ -8,6 +8,7 @@ import { DockModule } from 'primeng/dock';
 import { MenubarModule } from 'primeng/menubar';
 import { TimelineModule } from 'primeng/timeline';
 import { CardModule } from 'primeng/card';
+import { ChipModule } from 'primeng/chip';
 import { HomeComponent } from './home/home.component';
 import { EducationComponent } from './education/education.component';
 @NgModule({
@@ -24,7 +25,8 @@ import { EducationComponent } from './education/education.component';
     DockModule,
     MenubarModule,
     TimelineModule,
-    CardModule
+    CardModule,
+    ChipModule
   ],
   providers: [
     provideClientHydration()

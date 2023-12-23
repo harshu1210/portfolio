@@ -25,7 +25,59 @@ export class EducationComponent {
         universitySite: "http://www.unipune.ac.in/",
         activitesAndSocities: ["Football", "Volleyball", "Team Technothon"],
         description: "Computer engineering combines electrical engineering, computer science, and mathematics to design and develop computer systems, hardware, and software. Computer engineers design hardware components, such as processors, memory systems, and input/output devices, and develop software applications for a variety of platforms and systems. They conduct research and testing to evaluate the performance and efficiency of computer systems, work collaboratively with others to develop new products and technologies and troubleshoot and debug computer systems. Computer engineers must also ensure that computer systems are secure and meet regulatory standards.",
-        skill: ["Machine Learning", "Databases", "Cloud Computing", "Data Structures", "Python (Programming Language)", "TensorFlow", "MySQL", "HTML5", "Cascading Style Sheets (CSS)", "JavaScript", "Web Development", "C (Programming Language)", "C++", "Engineering", "Java", "Database Management System (DBMS)", "PHP"
+        skill: [
+          {
+            name: "Machine Learning",
+            logo: "../../assets/images/skills/Machine-Learning.jpg"
+          },{
+            name: "Databases",
+            logo: "../../assets/images/skills/database.png"
+          },{
+            name: "Cloud Computing",
+            logo: "../../assets/images/skills/cloudComputing.jpeg"
+          },{
+            name: "Data Structures",
+            logo: "../../assets/images/skills/dataStructure.png"
+          },{
+            name: "Python (Programming Language)",
+            logo: "../../assets/images/skills/python.png"
+          },{
+            name: "TensorFlow",
+            logo: "../../assets/images/skills/cloudComputing.jpeg"
+          },{
+            name: "MySQL",
+            logo: "../../assets/images/skills/cloudComputing.jpeg"
+          },{
+            name: "HTML5",
+            logo: "../../assets/images/skills/cloudComputing.jpeg"
+          },{
+            name: "Cascading Style Sheets (CSS)",
+            logo: "../../assets/images/skills/cloudComputing.jpeg"
+          },{
+            name: "JavaScript",
+            logo: "../../assets/images/skills/cloudComputing.jpeg"
+          },{
+            name: "Web Development",
+            logo: "../../assets/images/skills/cloudComputing.jpeg"
+          },{
+            name: "C (Programming Language)",
+            logo: "../../assets/images/skills/cloudComputing.jpeg"
+          },{
+            name: "C++",
+            logo: "../../assets/images/skills/cloudComputing.jpeg"
+          },{
+            name: "Engineering",
+            logo: "../../assets/images/skills/cloudComputing.jpeg"
+          },{
+            name: "Java",
+            logo: "../../assets/images/skills/cloudComputing.jpeg"
+          },{
+            name: "Database Management System (DBMS)",
+            logo: "../../assets/images/skills/cloudComputing.jpeg"
+          },{
+            name: "PHP",
+            logo: "../../assets/images/skills/cloudComputing.jpeg"
+          }
         ]
       },
     ];
