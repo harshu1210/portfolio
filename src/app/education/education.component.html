@@ -27,24 +27,33 @@
           <ng-template pTemplate="content">
             <div class="card-content" style="display: flex;flex-direction:column;">
               <div style="align-items: center;display: flex;flex-direction: row;">
-                <div style="margin: 10px;">Skills</div>
+                <div style="margin: 10px;">
+                  <h3>Skills</h3>
+                </div>
                 <div class="card flex align-items-center gap-2 flex-wrap">
-                  <p-chip class="margin10" *ngFor="let item of event.skill"
-                          [label]="item.name" [image]="item.logo"></p-chip>
-                  <p-chip class="margin10" label="More" image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png"></p-chip>
+                  <ng-container style="margin: 10px;" *ngFor="let item of event.skill;let i = index">
+                    <p-chip *ngIf="i<5" class="margin10" [label]="item.name" [image]="item.logo"></p-chip>
+                    <p-chip *ngIf="i==5" class="margin10" label="More" image="../../assets/images/skills/more.jpeg"></p-chip>
+                  </ng-container>
+
                 </div>
               </div>
             </div>
           </ng-template>
 
           <ng-template pTemplate="footer">
-            <p-button label="Save" icon="pi pi-check"></p-button>
-            <p-button label="Cancel" icon="pi pi-times"></p-button>
+            <div style="display: flex;flex-direction: row;">
+              <div>
+                <p-button label="Save" id="save" icon="pi pi-check"></p-button>
+              </div>
+              <div>
+                <p-button label="Cancel" id="cancel" icon="pi pi-times"></p-button>
+              </div>
+
+            </div>
           </ng-template>
         </p-card>
       </ng-template>
     </p-timeline>
   </div>
 </div>
-
-<!-- | slice:0:5 as any -->

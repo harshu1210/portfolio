@@ -28,55 +28,55 @@ export class EducationComponent {
         skill: [
           {
             name: "Machine Learning",
-            logo: "../../assets/images/skills/Machine-Learning.jpg"
-          },{
+            logo: "../../assets/images/skills/machineLearning.png"
+          }, {
             name: "Databases",
             logo: "../../assets/images/skills/database.png"
-          },{
+          }, {
             name: "Cloud Computing",
-            logo: "../../assets/images/skills/cloudComputing.jpeg"
-          },{
+            logo: "../../assets/images/skills/cloudComputing.png"
+          }, {
             name: "Data Structures",
             logo: "../../assets/images/skills/dataStructure.png"
-          },{
+          }, {
             name: "Python (Programming Language)",
             logo: "../../assets/images/skills/python.png"
-          },{
+          }, {
             name: "TensorFlow",
-            logo: "../../assets/images/skills/cloudComputing.jpeg"
-          },{
+            logo: "../../assets/images/skills/tensorflow.png"
+          }, {
             name: "MySQL",
-            logo: "../../assets/images/skills/cloudComputing.jpeg"
-          },{
+            logo: "../../assets/images/skills/mysql.jpeg"
+          }, {
             name: "HTML5",
-            logo: "../../assets/images/skills/cloudComputing.jpeg"
-          },{
+            logo: "../../assets/images/skills/html.png"
+          }, {
             name: "Cascading Style Sheets (CSS)",
-            logo: "../../assets/images/skills/cloudComputing.jpeg"
-          },{
+            logo: "../../assets/images/skills/css.png"
+          }, {
             name: "JavaScript",
-            logo: "../../assets/images/skills/cloudComputing.jpeg"
-          },{
+            logo: "../../assets/images/skills/javaScript.png"
+          }, {
             name: "Web Development",
-            logo: "../../assets/images/skills/cloudComputing.jpeg"
-          },{
+            logo: "../../assets/images/skills/webDevelopment.png"
+          }, {
             name: "C (Programming Language)",
-            logo: "../../assets/images/skills/cloudComputing.jpeg"
-          },{
+            logo: "../../assets/images/skills/c.png"
+          }, {
             name: "C++",
-            logo: "../../assets/images/skills/cloudComputing.jpeg"
-          },{
+            logo: "../../assets/images/skills/c++.png"
+          }, {
             name: "Engineering",
-            logo: "../../assets/images/skills/cloudComputing.jpeg"
-          },{
+            logo: "../../assets/images/skills/engineering.png"
+          }, {
             name: "Java",
-            logo: "../../assets/images/skills/cloudComputing.jpeg"
-          },{
+            logo: "../../assets/images/skills/java.png"
+          }, {
             name: "Database Management System (DBMS)",
-            logo: "../../assets/images/skills/cloudComputing.jpeg"
-          },{
+            logo: "../../assets/images/skills/dbms.png"
+          }, {
             name: "PHP",
-            logo: "../../assets/images/skills/cloudComputing.jpeg"
+            logo: "../../assets/images/skills/php.png"
           }
         ]
       },
