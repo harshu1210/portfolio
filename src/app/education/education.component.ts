@@ -10,6 +10,7 @@ export class EducationComponent {
   constructor() {
     this.events = [
       {
+        id: 1,
         schoolName: "PCET's Nutan Maharashtra Institute of Enginnering and Technology",
         schoolLogo: "../../assets/images/nutan.jpeg",
         startDate: "Jul 2018",
@@ -17,13 +18,29 @@ export class EducationComponent {
         icon: 'pi pi-check-circle',
         color: 'white',
         stream: "Computer & Science Engineering",
+        board: null,
         university: "Savitribai Phule Pune University",
         cgpa: 9.34,
+        percentage: 85.6,
         collegeMapLink: "https://maps.app.goo.gl/WhKJF3t9fmiFsN2j9",
         universityMapLink: "https://maps.app.goo.gl/WfuC44xsxVMJxADy9",
         collegeSite: "https://www.nmiet.edu.in/",
         universitySite: "http://www.unipune.ac.in/",
-        activitesAndSocities: ["Football", "Volleyball", "Team Technothon"],
+        activitiesAndSocities: [
+          {
+            name: "Football",
+            logo: "../../assets/images/activitiesSocities/football.png"
+          }, {
+            name: "Volleyball",
+            logo: "../../assets/images/activitiesSocities/volleyball.png"
+          }, {
+            name: "Chess",
+            logo: "../../assets/images/activitiesSocities/chess.png"
+          }, {
+            name: "Team Technothon",
+            logo: "../../assets/images/activitiesSocities/team.png"
+          }
+        ],
         description: "Computer engineering combines electrical engineering, computer science, and mathematics to design and develop computer systems, hardware, and software. Computer engineers design hardware components, such as processors, memory systems, and input/output devices, and develop software applications for a variety of platforms and systems. They conduct research and testing to evaluate the performance and efficiency of computer systems, work collaboratively with others to develop new products and technologies and troubleshoot and debug computer systems. Computer engineers must also ensure that computer systems are secure and meet regulatory standards.",
         skill: [
           {
@@ -80,6 +97,80 @@ export class EducationComponent {
           }
         ]
       },
+      {
+        id: 2,
+        schoolName: "Kendriya Vidyalaya No 1 Dehuroad Pune",
+        schoolLogo: "../../assets/images/kendriyaVidyalaya.png",
+        startDate: "Apr 2017",
+        endDate: "May 2018",
+        icon: 'pi pi-check-circle',
+        color: 'white',
+        stream: "Science",
+        board: "CBSE",
+        university: null,
+        cgpa: 8.8,
+        percentage: 79.2,
+        collegeMapLink: "https://maps.app.goo.gl/e32fYYTDjWhDQmmF6",
+        universityMapLink: null,
+        collegeSite: "https://no1dehuroad.kvs.ac.in/",
+        universitySite: null,
+        activitiesAndSocities: [
+          {
+            name: "Football",
+            logo: "../../assets/images/activitiesSocities/football.png"
+          }, {
+            name: "Volleyball",
+            logo: "../../assets/images/activitiesSocities/volleyball.png"
+          }, {
+            name: "Chess",
+            logo: "../../assets/images/activitiesSocities/chess.png"
+          }
+        ],
+        description: "I was from PCM Group i.e, Physics, Chemistry and Mathematics, along with that I was having Computer Science which was consisting of C++ and MySQL, and English.I was from PCM Group i.e, Physics, Chemistry and Mathematics, along with that I was having Computer Science which was consisting of C++ and MySQL, and English.",
+        skill: [
+          {
+            name: "MySQL",
+            logo: "../../assets/images/skills/mysql.jpeg"
+          }, {
+            name: "C (Programming Language)",
+            logo: "../../assets/images/skills/c.png"
+          }, {
+            name: "C++",
+            logo: "../../assets/images/skills/c++.png"
+          }
+        ]
+      }, {
+        id: 3,
+        schoolName: "Kendriya Vidyalaya No 1 Dehuroad Pune",
+        schoolLogo: "../../assets/images/kendriyaVidyalaya.png",
+        startDate: "Apr 2015",
+        endDate: "May 2016",
+        icon: 'pi pi-check-circle',
+        color: 'white',
+        stream: null,
+        board: "CBSE",
+        university: null,
+        cgpa: 8.8,
+        percentage: 80.6,
+        collegeMapLink: "https://maps.app.goo.gl/e32fYYTDjWhDQmmF6",
+        universityMapLink: null,
+        collegeSite: "https://no1dehuroad.kvs.ac.in/",
+        universitySite: null,
+        activitiesAndSocities: [
+          {
+            name: "Football",
+            logo: "../../assets/images/activitiesSocities/football.png"
+          }, {
+            name: "Volleyball",
+            logo: "../../assets/images/activitiesSocities/volleyball.png"
+          }, {
+            name: "Chess",
+            logo: "../../assets/images/activitiesSocities/chess.png"
+          }
+        ],
+        description: null,
+        skill: []
+      }
     ];
   }
 }
