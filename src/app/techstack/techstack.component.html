@@ -1,0 +1,19 @@
+<div id="container">
+  <h1>Tech Stack</h1>
+  <div class="flex-container">
+    <div *ngFor="let event of events;" class="flex-item">
+      <p-card>
+        <ng-template pTemplate="header">
+          <div style="display:flex;">
+            <div style="padding-left: 10px;">
+              <h2 style="margin-bottom: 0;">{{event.title}}</h2>
+            </div>
+          </div>
+        </ng-template>
+        <ng-template pTemplate="content">
+          <p-chip *ngFor="let tech of event.techstack" [label]="tech.name"></p-chip>
+        </ng-template>
+      </p-card>
+    </div>
+  </div>
+</div>
