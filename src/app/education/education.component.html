@@ -1,0 +1,72 @@
+<div id="container">
+  <h1>Education Details</h1>
+  <div class="card">
+    <p-timeline [value]="events" align="left" styleClass="customized-timeline">
+      <ng-template pTemplate="marker" let-event>
+        <span class="custom-marker shadow-2" [style.color]="event.color">
+          <i [ngClass]="event.icon"></i>
+        </span>
+      </ng-template>
+      <ng-template pTemplate="content" let-event>
+        <p-card>
+          <ng-template pTemplate="header">
+            <div style="display:flex;">
+              <div style="margin: 10px;">
+                <a [href]="event.collegeSite" target="_blank">
+                  <img alt="Card" style="width:100px;height: 100px;border-radius: 100px;position: relative;top: 50%;left: 50%;transform: translate(-50%,-50%);" [src]="event.schoolLogo" />
+                </a>
+              </div>
+              <div style="display: flex;flex-direction: column;">
+                <div>
+                  <h2 style="margin-bottom: 0;">{{event.schoolName}}</h2>
+                </div>
+                <div>
+                  <a [href]="event.collegeMapLink" target="_blank">
+                    <h4 style="margin-bottom: 0;width: max-content;">{{event.address}}</h4>
+                  </a>
+                  <img>
+                </div>
+                <div>
+                  <h4 style="margin-bottom: 0;">{{event.startDate}} - {{event.endDate}}</h4>
+                </div>
+              </div>
+            </div>
+          </ng-template>
+          <ng-template pTemplate="content">
+            <div style="margin-bottom: 10px;display: flex;flex-direction:row;">
+              <span style="margin: 10px;" *ngIf="event.cgpa"><b>CGPA :</b> {{event.cgpa}}</span>
+              <span style="margin: 10px;" *ngIf="event.cgpa"><b>Percenatge :</b> {{event.percentage}}%</span>
+            </div>
+            <div class="card-content" style="display: flex;flex-direction:column;">
+              <div *ngIf="event.skill.length !== 0" style="align-items: center;display: flex;flex-direction: row;">
+                <div style="margin: 10px;">
+                  <h3>Skills</h3>
+                </div>
+                <div class="card flex align-items-center gap-2 flex-wrap">
+                  <ng-container style="margin: 10px;" *ngFor="let item of event.skill; let i = index">
+                    <p-chip *ngIf="i < 5 || event.moreSkills" class="margin10" [label]="item.name" [image]="item.logo"></p-chip>
+                    <p-chip (click)="toggleMore(event, 'skills')" *ngIf="i === event.skill.length - 1 && event.skill.length > 5" class="margin10" [label]="event.moreSkills ? 'Collapse' : 'More'" [image]="event.moreSkills ? '../../assets/images/skills/collapse.jpeg' : '../../assets/images/skills/more.jpeg'"></p-chip>
+                  </ng-container>
+                </div>
+              </div>
+              <div *ngIf="event.activitiesAndSocities.length !== 0" style="align-items: center;display: flex;flex-direction: row;">
+                <div style="margin: 10px;">
+                  <h3>Activities & Socities</h3>
+                </div>
+                <div class="card flex align-items-center gap-2 flex-wrap">
+                  <ng-container style="margin: 10px;" *ngFor="let item of event.activitiesAndSocities; let i = index">
+                    <p-chip *ngIf="i < 5 || event.moreActivities" class="margin10" [label]="item.name" [image]="item.logo"></p-chip>
+                    <p-chip (click)="toggleMore(event, 'activities')" *ngIf="i === event.activitiesAndSocities.length - 1 && event.activitiesAndSocities.length > 5" class="margin10" [label]="event.moreActivities ? 'Collapse' : 'More'" [image]="event.moreActivities ? '../../assets/images/skills/collapse.jpeg' : '../../assets/images/skills/more.jpeg'"></p-chip>
+                  </ng-container>
+                </div>
+              </div>
+              <div *ngIf="event.description !== null">
+                {{event.description}}
+              </div>
+            </div>
+          </ng-template>
+        </p-card>
+      </ng-template>
+    </p-timeline>
+  </div>
+</div>

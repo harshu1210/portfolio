@@ -6,11 +6,16 @@ import { AppComponent } from './app.component';
 import { ButtonModule } from 'primeng/button';
 import { DockModule } from 'primeng/dock';
 import { MenubarModule } from 'primeng/menubar';
+import { TimelineModule } from 'primeng/timeline';
+import { CardModule } from 'primeng/card';
+import { ChipModule } from 'primeng/chip';
 import { HomeComponent } from './home/home.component';
+import { EducationComponent } from './education/education.component';
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    EducationComponent
   ],
   imports: [
     BrowserModule,
@@ -18,7 +23,10 @@ import { HomeComponent } from './home/home.component';
     BrowserAnimationsModule,
     ButtonModule,
     DockModule,
-    MenubarModule
+    MenubarModule,
+    TimelineModule,
+    CardModule,
+    ChipModule
   ],
   providers: [
     provideClientHydration()
