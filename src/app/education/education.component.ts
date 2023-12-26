@@ -6,12 +6,12 @@ import { Component } from '@angular/core';
 })
 export class EducationComponent {
   events: any[];
-
   constructor() {
     this.events = [
       {
-        id: 1,
+        id: 0,
         schoolName: "PCET's Nutan Maharashtra Institute of Enginnering and Technology",
+        address:"Talegaon, Pune",
         schoolLogo: "../../assets/images/nutan.jpeg",
         startDate: "Jul 2018",
         endDate: "Jun 2022",
@@ -20,7 +20,7 @@ export class EducationComponent {
         stream: "Computer & Science Engineering",
         board: null,
         university: "Savitribai Phule Pune University",
-        cgpa: 9.34,
+        cgpa: 9.4,
         percentage: 85.6,
         collegeMapLink: "https://maps.app.goo.gl/WhKJF3t9fmiFsN2j9",
         universityMapLink: "https://maps.app.goo.gl/WfuC44xsxVMJxADy9",
@@ -95,11 +95,14 @@ export class EducationComponent {
             name: "PHP",
             logo: "../../assets/images/skills/php.png"
           }
-        ]
+        ],
+        moreSkills:false,
+        moreActivities:true
       },
       {
-        id: 2,
-        schoolName: "Kendriya Vidyalaya No 1 Dehuroad Pune",
+        id: 1,
+        schoolName: "Kendriya Vidyalaya No 1",
+        address:"Dehuroad, Pune",
         schoolLogo: "../../assets/images/kendriyaVidyalaya.png",
         startDate: "Apr 2017",
         endDate: "May 2018",
@@ -138,10 +141,13 @@ export class EducationComponent {
             name: "C++",
             logo: "../../assets/images/skills/c++.png"
           }
-        ]
+        ],
+        moreSkills:false,
+        moreActivities:true
       }, {
-        id: 3,
-        schoolName: "Kendriya Vidyalaya No 1 Dehuroad Pune",
+        id: 2,
+        schoolName: "Kendriya Vidyalaya No 1",
+        address:"Dehuroad, Pune",
         schoolLogo: "../../assets/images/kendriyaVidyalaya.png",
         startDate: "Apr 2015",
         endDate: "May 2016",
@@ -169,8 +175,15 @@ export class EducationComponent {
           }
         ],
         description: null,
-        skill: []
+        skill: [],
+        moreSkills:false,
+        moreActivities:true
       }
     ];
   }
+
+  toggleMore(event: any, type: string): void {
+    event[`more${type.charAt(0).toUpperCase() + type.slice(1)}`] = !event[`more${type.charAt(0).toUpperCase() + type.slice(1)}`];
+  }
+
 }

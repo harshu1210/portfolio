@@ -24,14 +24,8 @@
   background-color: black;
 }
 
-::ng-deep.p-button{
-  color:#99F6E4;
-  margin-left: 5px;
-  margin-right: 5px;
-  background-color:black;
+::ng-deep.p-timeline-event-content{
+  margin: 10px;
 }
 
-#save, #cancel{
-  background-color: #333333;
-}
 
