@@ -5,14 +5,14 @@
   padding: 10px;
 }
 
-#skillContainer{
+#skillContainer {
   position: relative;
   height: 100%;
   width: 98%;
   padding-bottom: 20px;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   overflow: auto;
 }
 
@@ -29,6 +29,7 @@
 .p-card {
   max-width: 335px;
   background-color: #333333 !important;
+  position: relative;
 }
 
 .p-chip {
@@ -41,33 +42,6 @@
   /* Adjust the border-radius as needed */
 }
 
-.p-chip:hover::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  box-sizing: border-box;
-  border: 2px solid #00f;
-  /* Adjust border width and color */
-  border-radius: 10px;
-  /* Same as the .p-chip border-radius */
-  opacity: 0;
-  animation: neon-border 1s ease-in-out infinite;
-}
-
-@keyframes neon-border {
-
-  0%,
-  100% {
-    opacity: 0;
-  }
-
-  50% {
-    opacity: 1;
-  }
-}
 
 .p-element {
   background-color: transparent;
@@ -75,4 +49,12 @@
 
 .p-card-content {
   padding: 0%;
+}
+
+.p-chip:hover {
+  box-shadow: 0 0 10px rgba(0, 255, 255, 1),
+              0 0 20px rgba(0, 255, 255, 1),
+              0 0 30px rgba(0, 255, 255, 1),
+              0 0 40px rgba(0, 255, 255, 1),
+              0 0 50px rgba(0, 255, 255, 1);
 }
