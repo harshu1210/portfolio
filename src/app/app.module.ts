@@ -11,11 +11,13 @@ import { CardModule } from 'primeng/card';
 import { ChipModule } from 'primeng/chip';
 import { HomeComponent } from './home/home.component';
 import { EducationComponent } from './education/education.component';
+import { TechstackComponent } from './techstack/techstack.component';
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    EducationComponent
+    EducationComponent,
+    TechstackComponent
   ],
   imports: [
     BrowserModule,

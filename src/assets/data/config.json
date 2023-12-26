@@ -264,27 +264,7 @@
   ],
   "skills": [
     {
-      "title": "Programming Language",
-      "techstack": [
-        {
-          "name": "C",
-          "level": 4
-        },
-        {
-          "name": "C++",
-          "level": 4.7
-        },
-        {
-          "name": "Java",
-          "level": 4.5
-        },
-        {
-          "name": "Python",
-          "level": 3.5
-        }
-      ]
-    },
-    {
+      "id": 0,
       "title": "Front-End",
       "techstack": [
         {
@@ -314,7 +294,8 @@
       ]
     },
     {
-      "title": "Backend",
+      "id": 1,
+      "title": "Back-End",
       "techstack": [
         {
           "name": "Rest API's",
@@ -331,23 +312,7 @@
       ]
     },
     {
-      "title": "DataBase",
-      "techstack": [
-        {
-          "name": "MySQL",
-          "level": 5
-        },
-        {
-          "name": "Oracle DataBase",
-          "level": 5
-        },
-        {
-          "name": "PostgreSQL",
-          "level": 5
-        }
-      ]
-    },
-    {
+      "id": 2,
       "title": "FrameWorks",
       "techstack": [
         {
@@ -377,6 +342,47 @@
       ]
     },
     {
+      "id": 3,
+      "title": "Programming Language",
+      "techstack": [
+        {
+          "name": "C",
+          "level": 4
+        },
+        {
+          "name": "C++",
+          "level": 4.7
+        },
+        {
+          "name": "Java",
+          "level": 4.5
+        },
+        {
+          "name": "Python",
+          "level": 3.5
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "DataBase",
+      "techstack": [
+        {
+          "name": "MySQL",
+          "level": 5
+        },
+        {
+          "name": "Oracle DataBase",
+          "level": 5
+        },
+        {
+          "name": "PostgreSQL",
+          "level": 5
+        }
+      ]
+    },
+    {
+      "id": 5,
       "title": "Package Manager",
       "techstack": [
         {
@@ -402,6 +408,7 @@
       ]
     },
     {
+      "id": 6,
       "title": "DevOps",
       "techstack": [
         {
@@ -423,6 +430,7 @@
       ]
     },
     {
+      "id": 7,
       "title": "Operating Systems",
       "techstack": [
         {
@@ -444,6 +452,7 @@
       ]
     },
     {
+      "id": 8,
       "title": "Integrated Development Environment",
       "techstack": [
         {
