@@ -280,6 +280,10 @@
           "level": 5
         },
         {
+          "name": "Angular",
+          "level": 5
+        },
+        {
           "name": "JavaScript",
           "level": 5
         },
@@ -466,6 +470,118 @@
         {
           "name": "Eclipse",
           "level": 5
+        }
+      ]
+    }
+  ],
+  "workExperience": [
+    {
+      "id": 0,
+      "companyName": "Persistent Systems",
+      "logo": "../assets/images/persistent.png",
+      "joiningDate": "June/2022",
+      "endDate": "Current",
+      "jobTitle": "Software Engineer",
+      "type": "Full Time",
+      "address": "Pune, Maharashtra, India - Remote",
+      "experience": "Strong understanding of Angular concepts such as components, services, dependency injection, directives, and pipes. Proficient in TypeScript, HTML, CSS, JavaScript, and Web Components. Experience using Angular CLI to create and manage projects. Familiarity with libraries such as RxJS, Angular Material, npm Libraries, amCharts, and HighCharts (Data Visualization Libraries). I am experienced in using Git for version control and collaborating with other developers.\n\nPassion for staying up-to-date with the latest Angular developments and best practices. Ability to troubleshoot and debug Angular applications. Strong problem-solving skills and attention to detail. Proficiency in responsive design and accessibility best practices for web applications.\n\nComfortable working in a team environment and communicating with designers and project managers.\n\nExperience working on large and small Angular projects, including complex data management and integration with third-party APIs.\n\nExperienced in Spring Boot, Spring Data JPA, Java Mail Sender, MySQL, Oracle Database, and RestFull APIs.",
+      "skills": [
+        {
+          "name": "Angular"
+        },
+        {
+          "name": "Responsive Web Design"
+        },
+        {
+          "name": "Data Visualization"
+        },
+        {
+          "name": "Web Components"
+        },
+        {
+          "name": "Databases"
+        },
+        {
+          "name": "Data Structures"
+        },
+        {
+          "name": "MySQL"
+        },
+        {
+          "name": "HTML5"
+        },
+        {
+          "name": "Cascading Style Sheets (CSS)"
+        },
+        {
+          "name": "JavaScript"
+        },
+        {
+          "name": "Web Development"
+        },
+        {
+          "name": "Engineering"
+        },
+        {
+          "name": "Java"
+        },
+        {
+          "name": "Database Management System (DBMS)"
+        }
+      ],
+      "appreciation": [
+        {
+          "title": "HLS_Technothon 2023",
+          "subTitle": "Winning Certificate of HLS_Technothon 2023",
+          "img": "../images/appreciation/hlsTechnothon.jpeg"
+        },
+        {
+          "title": "Appreciation Award for FY23Q4",
+          "subTitle": "Good work on UI HDD and web components. (UVA Simulation System)",
+          "img": "../images/appreciation/Fy23Q4.jpeg"
+        },
+        {
+          "title": "Appreciation Award for FY23Q3",
+          "subTitle": "Excellent Work on Demo Project ( Angular + Spring Boot + MySQL + Firebase)",
+          "img": "../images/appreciation/Fy23Q3.jpeg"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "companyName": "Persistent Systems",
+      "logo": "../assets/images/persistent.png",
+      "joiningDate": "Dec/2021",
+      "endDate": "June/2022",
+      "jobTitle": "Associate Software Engineer",
+      "type": "Internship",
+      "address": "Pune, Maharashtra, India - Remote",
+      "experience": "During my learning internship at Persistent System Limited., I had the opportunity to work alongside experienced professionals in the field and gain hands-on experience in various aspects of the industry.\n\nThroughout my internship, I worked on various technologies ( Java Core, Java Collections, Spring MVC, Spring Security, Spring Boot, HTML5, CSS3, JavaScript, TypeScript, Angular, Responsive Web Design, MySQL, Oracle Database, MongoDB, DBMS and Project Management ). I learned how to use industry-specific software and tools, as well as how to work effectively as part of a team. I also had the chance to attend industry events and conferences, where I learned about new trends and developments in the field.\n\nIn addition to the technical skills I developed, my internship experience also helped me to develop important soft skills, such as communication, time management, and problem-solving. I received regular feedback from my supervisor and colleagues, which helped me to identify areas for improvement and set goals for my future professional development.\n\nOverall, my learning internship at Persistent Systems Ltd provided me with a valuable learning experience that helped me to gain practical skills, knowledge, and industry insights that will serve me well as I pursue a career in this field.",
+      "skills": [
+        {
+          "name": "Angular"
+        },
+        {
+          "name": "Responsive Web Design"
+        },
+        {
+          "name": "Spring Boot"
+        },
+        {
+          "name": "MySQL"
+        },
+        {
+          "name": "Java"
+        },
+        {
+          "name": "Database Management System (DBMS)"
+        }
+      ],
+      "appreciation": [
+        {
+          "title": "Appreciation Certificate FY23Q2",
+          "subTitle": "Best Performance Award in GEMS (Graduate Engineering with Multi-dimensional Skills) training which consist of, Java Core, Java Collections, Spring MVC, Spring Security, Spring Boot, Spring Data JPA, MySQL, Oracle Database, HTML5, CSS3, Javascript, Angular, Typescript and Responsive Web",
+          "img": "../images/appreciation/Fy23Q2.jpeg"
         }
       ]
     }
