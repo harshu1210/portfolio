@@ -1,0 +1,159 @@
+{
+  "profile": {
+    "profileImage": "../assets/harshal.png",
+    "profession": "Software Engineer | FullStack Developer",
+    "current": "Persistent System"
+  },
+  "icons": {
+    "lock": "lock",
+    "openLock": "lock_open",
+    "star": "star"
+  },
+  "headers": [
+    "RESUME",
+    "PROJECTS",
+    "CONTACT"
+  ],
+  "sections": [
+    {
+      "header": "About Me",
+      "content": "I am a dedicated Full Stack Developer with 2.5 years of experience specializing in Angular and Spring Boot. My passion lies in creating robust, scalable, and user-friendly web applications. With a strong foundation in both front-end and back-end technologies, I deliver comprehensive solutions that meet both user needs and business requirements."
+    },
+    {
+      "header": "Core Strengths",
+      "content": [
+        {
+          "header": "Clean and Maintainable Code: ",
+          "content": "I prioritize writing clean, well-structured, and modular code that is easy to understand and maintain."
+        },
+        {
+          "header": "Agile Methodologies: ",
+          "content": "I thrive in Agile environments, consistently delivering high-quality work within tight deadlines."
+        },
+        {
+          "header": "Cross-Platform Proficiency: ",
+          "content": "I am comfortable working with Windows, Linux, and Mac operating systems."
+        }
+      ]
+    },
+    {
+      "header": "Skills",
+      "content": [
+        {
+          "header": "Programming Language",
+          "content": [
+            {
+              "header": "C",
+              "content": "../../../assets/skills/c.svg"
+            },
+            {
+              "header": "C++",
+              "content": "../../../assets/skills/c++.svg"
+            },
+            {
+              "header": "Java",
+              "content": "../../../assets/skills/java.svg"
+            }
+          ]
+        },
+        {
+          "header": "Scripting Language & Frameworks",
+          "content": [
+            {
+              "header": "HTML",
+              "content": "../../../assets/skills/html.svg"
+            },
+            {
+              "header": "CSS3",
+              "content": "../../../assets/skills/css.svg"
+            },
+            {
+              "header": "Javascript",
+              "content": "../../../assets/skills/javascript.svg"
+            },
+            {
+              "header": "Typescript",
+              "content": "../../../assets/skills/typescript.svg"
+            },
+            {
+              "header": "Angular",
+              "content": "../../../assets/skills/angular.svg"
+            },
+            {
+              "header": "NPM",
+              "content": "../../../assets/skills/npm.svg"
+            }
+          ]
+        },
+        {
+          "header": "Backend",
+          "content": [
+            {
+              "header": "Spring Boot",
+              "content": "../../../assets/skills/springBoot.svg"
+            },
+            {
+              "header": "RestApi's",
+              "content": "../../../assets/skills/restApi.png"
+            },
+            {
+              "header": "MySQL",
+              "content": "../../../assets/skills/mysql.svg"
+            },
+            {
+              "header": "Postgres",
+              "content": "../../../assets/skills/postgres.svg"
+            },
+            {
+              "header": "MongoDB",
+              "content": "../../../assets/skills/mongodb.svg"
+            },
+            {
+              "header": "Firebase",
+              "content": "../../../assets/skills/firebase.svg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "header":"Employment",
+      "content":[
+        {
+          "firmName":"Persistent Systems Ltd.",
+          "location":"Pune",
+          "designation":"Software Engineer",
+          "timePeriod":"June-2022 - Current",
+          "content":{
+            "header":"Roles and Responsibilities:",
+            "content":["Collaborating with stakeholders to gather and refine project requirements.","Understanding specific needs and expectations for the user interface and user experience.","Evaluating the feasibility of various design options.","Ensuring alignment with project goals.","Documenting all findings and requirements to maintain clear communication.","Tracking and updating work regularly in Jira to ensure transparency and progress monitoring.","Writing clean, maintainable, and efficient code to implement required functionalities.","Utilizing version control with GitHub to document and integrate code changes smoothly.","Providing regular status updates and task management in Jira.","Conducting developer testing to identify and fix bugs early.","Handling improvement tickets and contributing to project documentation.","Collaborating with team members and approving GitLab merge requests to maintain code "]
+          }
+        },{
+          "firmName":"Persistent Systems Ltd.",
+          "location":"Pune",
+          "designation":"Associate Software Engineer",
+          "timePeriod":"Dec-2021 - June-2022",
+          "content":{
+            "header":"Roles and Responsibilities:",
+            "content":["During my learning internship at Persistent Systems Limited, I had the opportunity to work alongside experienced professionals and gain hands-on experience in various aspects of the industry. My responsibilities and achievements include:","Worked with Java Core, Java Collections, Spring MVC, Spring Security, Spring Boot, HTML5, CSS3, JavaScript, TypeScript, Angular, Responsive Web Design, MySQL, Oracle Database, MongoDB, and DBMS.","Gained experience in project management and industry-specific software and tools.","Learned to work effectively as part of a team.","Attended industry events and conferences to stay updated on new trends and developments.","Improved communication, time management, and problem-solving skills.","Received regular feedback from my supervisor and colleagues, identifying areas for improvement and setting professional development goals.","This internship provided me with valuable practical skills, knowledge, and industry insights that will serve me well as I pursue a career in this field."]
+          }
+        }
+      ]
+    },
+    {
+      "header": "Continuous Learning",
+      "content": "In my free time, I stay updated with the latest web technologies, contribute to open-source projects, and experiment with new coding techniques. This continuous learning approach ensures that I remain at the forefront of industry advancements and can bring innovative solutions to the projects I work on.\n\nIf you are looking for a passionate and skilled Full Stack Developer to build exceptional web applications, let's connect!"
+    }
+  ],
+  "contact": {
+    "header": "Contact with mail",
+    "phoneNumber": "+91 8669073711",
+    "email": "charshal40@gmail.com",
+    "linkedIn": "../../../assets/linkedIn.svg",
+    "linkedInUrl": "https://www.linkedin.com/in/harshal-chopade-215538152/",
+    "github": "../../../assets/github.svg",
+    "githubUrl": "https://github.com/harshu1210",
+    "instagram": "../../../assets/instagram.svg",
+    "instagramUrl": "https://www.instagram.com/_harshu12/?next=%2F"
+  }
+}

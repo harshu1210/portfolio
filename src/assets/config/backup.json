@@ -1,0 +1,143 @@
+{
+  "profile": {
+    "profileImage": "../assets/harshal.png",
+    "profession": "Software Engineer | FullStack Developer",
+    "current": "Persistent System"
+  },
+  "icons": {
+    "lock": "lock",
+    "openLock": "lock_open",
+    "star": "star"
+  },
+  "headers": [
+    "RESUME",
+    "PROJECTS",
+    "CONTACT"
+  ],
+  "sections": [
+    {
+      "header": "About Me",
+      "content": "I am a dedicated Full Stack Developer with 2.5 years of experience specializing in Angular and Spring Boot. My passion lies in creating robust, scalable, and user-friendly web applications. With a strong foundation in both front-end and back-end technologies, I deliver comprehensive solutions that meet both user needs and business requirements."
+    },
+    {
+      "header": "Front-End Expertise",
+      "content": "My front-end skills are anchored in Angular, where I excel in building dynamic and responsive user interfaces. I am proficient in TypeScript, JavaScript, HTML, CSS, and Web Components. My experience includes integrating RESTful APIs, ensuring seamless communication between the client and server, and developing intuitive interfaces that enhance user experiences."
+    },
+    {
+      "header": "Back-End Proficiency",
+      "content": "On the back-end, I leverage Spring Boot to create efficient and secure server-side applications. My expertise extends to Java, Java Collections, Spring Data JPA, MySQL, MongoDB, and Firebase. I design and implement scalable architectures that support complex business logic and provide reliable performance."
+    },
+    {
+      "header": "Core Strengths",
+      "content": [
+        {
+          "header": "Clean and Maintainable Code: ",
+          "content": "I prioritize writing clean, well-structured, and modular code that is easy to understand and maintain."
+        },
+        {
+          "header": "Agile Methodologies: ",
+          "content": "I thrive in Agile environments, consistently delivering high-quality work within tight deadlines."
+        },
+        {
+          "header": "Cross-Platform Proficiency: ",
+          "content": "I am comfortable working with Windows, Linux, and Mac operating systems."
+        }
+      ]
+    },
+    {
+      "header": "Skills",
+      "content": [
+        {
+          "header": "Projramming Language",
+          "content": [
+            {
+              "header": "C",
+              "content": "../../../assets/skills/c.svg"
+            },
+            {
+              "header": "C++",
+              "content": "../../../assets/skills/c++.svg"
+            },
+            {
+              "header": "Java",
+              "content": "../../../assets/skills/java.svg"
+            }
+          ]
+        },
+        {
+          "header": "Scripting Language & Frameworks",
+          "content": [
+            {
+              "header": "HTML",
+              "content": "../../../assets/skills/html.svg"
+            },
+            {
+              "header": "CSS3",
+              "content": "../../../assets/skills/css.svg"
+            },
+            {
+              "header": "Javascript",
+              "content": "../../../assets/skills/javascript.svg"
+            },
+            {
+              "header": "Typescript",
+              "content": "../../../assets/skills/typescript.svg"
+            },
+            {
+              "header": "Angular",
+              "content": "../../../assets/skills/angular.svg"
+            },
+            {
+              "header": "NPM",
+              "content": "../../../assets/skills/npm.svg"
+            }
+          ]
+        },
+        {
+          "header": "Backend",
+          "content": [
+            {
+              "header": "Spring Boot",
+              "content": "../../../assets/skills/springBoot.svg"
+            },
+            {
+              "header": "RestApi's",
+              "content": "../../../assets/skills/restApi.png"
+            },
+            {
+              "header": "MySQL",
+              "content": "../../../assets/skills/mysql.svg"
+            },
+            {
+              "header": "Postgres",
+              "content": "../../../assets/skills/postgres.svg"
+            },
+            {
+              "header": "MongoDB",
+              "content": "../../../assets/skills/mongodb.svg"
+            },
+            {
+              "header": "Firebase",
+              "content": "../../../assets/skills/firebase.svg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "header": "Continuous Learning",
+      "content": "In my free time, I stay updated with the latest web technologies, contribute to open-source projects, and experiment with new coding techniques. This continuous learning approach ensures that I remain at the forefront of industry advancements and can bring innovative solutions to the projects I work on.\n\nIf you are looking for a passionate and skilled Full Stack Developer to build exceptional web applications, let's connect!"
+    }
+  ],
+  "contact": {
+    "header": "Contact with mail",
+    "phoneNumber": "+91 8669073711",
+    "email": "charshal40@gmail.com",
+    "linkedIn": "../../../assets/linkedIn.svg",
+    "linkedInUrl": "https://www.linkedin.com/in/harshal-chopade-215538152/",
+    "github": "../../../assets/github.svg",
+    "githubUrl": "https://github.com/harshu1210",
+    "instagram": "../../../assets/instagram.svg",
+    "instagramUrl": "https://www.instagram.com/_harshu12/?next=%2F"
+  }
+}
