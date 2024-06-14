@@ -168,3 +168,17 @@
   font-size: medium;
 }
 
+.gap30px{
+  gap: 30px;
+}
+
+.border-top-bottom{
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.padding-top-bottom{
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+

@@ -46,34 +46,9 @@
           </div>
         </div>
       </div>
-      <div class="employment gap15px" *ngIf="isArray(x.content)==true && x.header=='Employment'">
-        <!-- <div class="employment" *ngFor="let item of x.content">
-          <div class="firm example-spacer">
-            <div>
-              {{item.firmName}}
-            </div>
-            <div>
-              {{item.location}}
-            </div>
-          </div>
-
-          <div>
-            {{item.designation}}
-          </div>
-          <div>
-            {{item.timePeriod}}
-          </div>
-          <div>
-            {{item.content.header}}
-          </div>
-          <div class="rolesResp">
-              <div *ngFor="let x of item.content.content">
-                {{x}}
-              </div>
-          </div>
-        </div> -->
+      <div class="employment gap30px" *ngIf="isArray(x.content)==true && x.header=='Employment'">
         <div class="employment gap10px" *ngFor="let item of x.content">
-          <div class="firm bold medium">
+          <div class="firm bold medium border-top-bottom padding-top-bottom">
             <div>
               {{item.firmName}}
             </div>
