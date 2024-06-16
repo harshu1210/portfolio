@@ -7,7 +7,10 @@
   "icons": {
     "lock": "lock",
     "openLock": "lock_open",
-    "star": "star"
+    "star": "star",
+    "home": "home",
+    "project": "tactics",
+    "contacts": "contacts"
   },
   "headers": [
     "RESUME",
@@ -117,25 +120,48 @@
       ]
     },
     {
-      "header":"Employment",
-      "content":[
+      "header": "Employment",
+      "content": [
         {
-          "firmName":"Persistent Systems Ltd.",
-          "location":"Pune",
-          "designation":"Software Engineer",
-          "timePeriod":"June-2022 - Current",
-          "content":{
-            "header":"Roles and Responsibilities:",
-            "content":["Collaborating with stakeholders to gather and refine project requirements.","Understanding specific needs and expectations for the user interface and user experience.","Evaluating the feasibility of various design options.","Ensuring alignment with project goals.","Documenting all findings and requirements to maintain clear communication.","Tracking and updating work regularly in Jira to ensure transparency and progress monitoring.","Writing clean, maintainable, and efficient code to implement required functionalities.","Utilizing version control with GitHub to document and integrate code changes smoothly.","Providing regular status updates and task management in Jira.","Conducting developer testing to identify and fix bugs early.","Handling improvement tickets and contributing to project documentation.","Collaborating with team members and approving GitLab merge requests to maintain code "]
+          "firmName": "Persistent Systems Ltd.",
+          "location": "Pune",
+          "designation": "Software Engineer",
+          "timePeriod": "June-2022 - Current",
+          "content": {
+            "header": "Roles and Responsibilities:",
+            "content": [
+              "Collaborating with stakeholders to gather and refine project requirements.",
+              "Understanding specific needs and expectations for the user interface and user experience.",
+              "Evaluating the feasibility of various design options.",
+              "Ensuring alignment with project goals.",
+              "Documenting all findings and requirements to maintain clear communication.",
+              "Tracking and updating work regularly in Jira to ensure transparency and progress monitoring.",
+              "Writing clean, maintainable, and efficient code to implement required functionalities.",
+              "Utilizing version control with GitHub to document and integrate code changes smoothly.",
+              "Providing regular status updates and task management in Jira.",
+              "Conducting developer testing to identify and fix bugs early.",
+              "Handling improvement tickets and contributing to project documentation.",
+              "Collaborating with team members and approving GitLab merge requests to maintain code "
+            ]
           }
-        },{
-          "firmName":"Persistent Systems Ltd.",
-          "location":"Pune",
-          "designation":"Associate Software Engineer",
-          "timePeriod":"Dec-2021 - June-2022",
-          "content":{
-            "header":"Roles and Responsibilities:",
-            "content":["During my learning internship at Persistent Systems Limited, I had the opportunity to work alongside experienced professionals and gain hands-on experience in various aspects of the industry. My responsibilities and achievements include:","Worked with Java Core, Java Collections, Spring MVC, Spring Security, Spring Boot, HTML5, CSS3, JavaScript, TypeScript, Angular, Responsive Web Design, MySQL, Oracle Database, MongoDB, and DBMS.","Gained experience in project management and industry-specific software and tools.","Learned to work effectively as part of a team.","Attended industry events and conferences to stay updated on new trends and developments.","Improved communication, time management, and problem-solving skills.","Received regular feedback from my supervisor and colleagues, identifying areas for improvement and setting professional development goals.","This internship provided me with valuable practical skills, knowledge, and industry insights that will serve me well as I pursue a career in this field."]
+        },
+        {
+          "firmName": "Persistent Systems Ltd.",
+          "location": "Pune",
+          "designation": "Associate Software Engineer",
+          "timePeriod": "Dec-2021 - June-2022",
+          "content": {
+            "header": "Roles and Responsibilities:",
+            "content": [
+              "During my learning internship at Persistent Systems Limited, I had the opportunity to work alongside experienced professionals and gain hands-on experience in various aspects of the industry. My responsibilities and achievements include:",
+              "Worked with Java Core, Java Collections, Spring MVC, Spring Security, Spring Boot, HTML5, CSS3, JavaScript, TypeScript, Angular, Responsive Web Design, MySQL, Oracle Database, MongoDB, and DBMS.",
+              "Gained experience in project management and industry-specific software and tools.",
+              "Learned to work effectively as part of a team.",
+              "Attended industry events and conferences to stay updated on new trends and developments.",
+              "Improved communication, time management, and problem-solving skills.",
+              "Received regular feedback from my supervisor and colleagues, identifying areas for improvement and setting professional development goals.",
+              "This internship provided me with valuable practical skills, knowledge, and industry insights that will serve me well as I pursue a career in this field."
+            ]
           }
         }
       ]

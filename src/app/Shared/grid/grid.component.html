@@ -1,0 +1,67 @@
+<div class="portraitContainer center">
+  <div class="coverPage" id="gridFrontPage" *ngIf="!page">
+    <div class="widthAndHeight100" id="profileContent">
+      <div id="aspect-ratio-wrapper" class="center">
+        <img class="widthAndHeight100 profileImage" [src]="base.profile.profileImage"
+          [ngClass]="{'fade-in': isProfileVisible}">
+      </div>
+    </div>
+    <div class="unlock widthAndHeight100">
+      <button class="unlockButton innerPage" (click)="toggle()">
+        <span class="material-symbols-outlined center font5vh paddingLeft10per">
+          {{base.icons.openLock}}
+        </span>
+      </button>
+    </div>
+    <div class="tagLineContainer widthAndHeight100">
+      <div class="tagLine">
+        <div class="name font5vh" [ngClass]="{'fade-in': isNameVisible}">{{ displayText }}</div>
+        <div class="profession font3vh" [ngClass]="{'fade-in': isProfessionVisible}">
+          {{base.profile.profession}}
+        </div>
+        <div class="current font3vh" [ngClass]="{'fade-in': isCurrentVisible}">
+          {{base.profile.current}}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="innerPage" *ngIf="page">
+    <div class="navbar coverPage">
+      <div class="toolButton">
+        <button (click)="toggleTabs('resume')" class="tool-button">
+          <span class="material-symbols-outlined font5vh">
+            {{base.icons.home}}
+          </span>
+        </button>
+      </div>
+      <div class="toolButton">
+        <button (click)="toggleTabs('projects')" class="tool-button">
+          <span class="material-symbols-outlined font5vh">
+            {{base.icons.project}}
+          </span>
+        </button>
+      </div>
+      <div class="toolButton">
+        <button (click)="toggleTabs('contacts')" class="tool-button">
+          <span class="material-symbols-outlined font5vh">
+            {{base.icons.contacts}}
+          </span>
+        </button>
+      </div>
+      <div class="toolButton" (click)="toggle()">
+        <button class="tool-button">
+          <span class="material-symbols-outlined font5vh">
+            {{base.icons.lock}}
+          </span>
+        </button>
+      </div>
+    </div>
+    <div class="content center">
+      <mobile-view *ngIf="resumeFlag" [headerTemplate]="base.headers[0]" [template]="template2"
+        [data]="base.sections"></mobile-view>
+      <mobile-view *ngIf="projectsFlag" [headerTemplate]="base.headers[1]"></mobile-view>
+      <mobile-view *ngIf="contactsFlag" [headerTemplate]="base.headers[2]" [template]="template1"
+        [data]="base.contact"></mobile-view>
+    </div>
+  </div>
+</div>

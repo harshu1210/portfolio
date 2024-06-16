@@ -6,18 +6,22 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SharedComponent } from './Shared/shared/shared.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { GridComponent } from './Shared/grid/grid.component';
+import { SharedMobileViewComponent } from './shared-mobile-view/shared-mobile-view.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SharedComponent
+    SharedComponent,
+    GridComponent,
+    SharedMobileViewComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

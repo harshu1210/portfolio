@@ -1,40 +1,30 @@
 <div class="mainContentContainer">
   <div class="header" *ngIf="headerTemplate!=undefined">
     <div>
-      <span class="material-symbols-outlined">
+      <span class="material-symbols-outlined mainHeaderFont">
         star
       </span>
     </div>
-    <div>
+    <div class="mainHeaderFont">
       {{headerTemplate}}
     </div>
     <div>
-      <span class="material-symbols-outlined">
+      <span class="material-symbols-outlined mainHeaderFont">
         star
       </span>
     </div>
   </div>
   <div id="content" *ngIf="template=='resume'">
-    <div class="subCotentContainer" *ngFor="let x of data">
-      <div class="header header-medium bold">
-        <div>
-          <span class="material-symbols-outlined">
-            star
-          </span>
-        </div>
-        <div style="display: flex;align-content: center;flex-wrap: wrap;">
+    <div *ngFor="let x of data">
+      <div class="header bold noborder">
+        <div style="display: flex;align-content: center;flex-wrap: wrap;" class="subHeaderFont">
           {{x.header}}
         </div>
-        <div>
-          <span class="material-symbols-outlined">
-            star
-          </span>
-        </div>
       </div>
-      <div *ngIf="isArray(x.content)==false">
+      <div class="subSubHeaderFont" *ngIf="isArray(x.content)==false">
         {{x.content}}
       </div>
-      <div *ngIf="isArray(x.content)==true && x.header=='Core Strengths'">
+      <div class="subSubHeaderFont" *ngIf="isArray(x.content)==true && x.header=='Core Strengths'">
         <ul *ngFor="let item of x.content">
           <li>
             <b>{{item.header}}</b>{{item.content}}
@@ -43,22 +33,22 @@
       </div>
       <div class="skillsContainer" *ngIf="isArray(x.content)==true && x.header=='Skills'">
         <div class="align-items-center" *ngFor="let item of x.content">
-          <div class="header header-medium">
-            <div>
+          <div class="header subSubHeaderBorder">
+            <div class="subSubHeaderFont">
               {{item.header}}
             </div>
           </div>
           <div class="skillContainer">
             <div *ngFor="let i of item.content" class="skillContent">
-              <div><img [src]="i.content"></div>
-              <div>{{i.header}}</div>
+              <div><img [src]="i.content" class="imgIcons"></div>
+              <div class="subSubHeaderFont">{{i.header}}</div>
             </div>
           </div>
         </div>
       </div>
-      <div class="employment gap30px" *ngIf="isArray(x.content)==true && x.header=='Employment'">
-        <div class="employment gap10px" *ngFor="let item of x.content">
-          <div class="firm bold medium border-top-bottom padding-top-bottom">
+      <div class="employment gap4vh" *ngIf="isArray(x.content)==true && x.header=='Employment'">
+        <div class="employment gap2vh" *ngFor="let item of x.content">
+          <div class="firm bold subSubHeaderBorder subSubHeaderFont padding-top-bottom">
             <div>
               {{item.firmName}}
             </div>
@@ -67,7 +57,7 @@
               {{item.location}}
             </div>
           </div>
-          <div class="firm">
+          <div class="firm subSubHeaderFont">
             <div>
               {{item.designation}}
             </div>
@@ -76,10 +66,10 @@
               {{item.timePeriod}}
             </div>
           </div>
-          <div class="bold">
+          <div class="bold subSubHeaderFont">
             {{item.content.header}}
           </div>
-          <ul class="rolesResp">
+          <ul class="rolesResp subSubHeaderFont">
             <li *ngFor="let x of item.content.content">
               <b> - </b>{{x}}
             </li>
@@ -92,23 +82,23 @@
   <!-- Contact Template -->
   <div class="contactDetails">
     <form (submit)="sendEmail($event)" class="formContent" *ngIf="template=='contact'">
-      <div class="center">
+      <div class="center subHeaderFont noborder">
         {{data.header}}
       </div>
-      <div class="center">
-        <input class="full-width" type="text" name="fromEmailAddress" [(ngModel)]="fromEmailAddress"
+      <div class="center subSubHeaderFont">
+        <input class="full-width subSubHeaderFont" type="text" name="fromEmailAddress" [(ngModel)]="fromEmailAddress"
           placeholder="Enter Your Email Address" required>
       </div>
-      <div class="center">
-        <input class="full-width" type="text" name="subject" [(ngModel)]="subject" placeholder="Enter Mail Subject"
-          required>
+      <div class="center subSubHeaderFont">
+        <input class="full-width subSubHeaderFont" type="text" name="subject" [(ngModel)]="subject"
+          placeholder="Enter Mail Subject" required>
       </div>
-      <div class="center height50">
-        <textarea class="textarea" name="message" [(ngModel)]="body" placeholder="Enter Mail Description"
-          required></textarea>
+      <div class="center height50 subSubHeaderFont">
+        <textarea class="textarea subSubHeaderFont" name="message" [(ngModel)]="body"
+          placeholder="Enter Mail Description" required></textarea>
       </div>
-      <div class="center">
-        <input class="emailButton" type="submit" value="Send Mail">
+      <div class="center subSubHeaderFont">
+        <input class="emailButton subSubHeaderFont" type="submit" value="Send Mail">
       </div>
     </form>
     <div *ngIf="template=='contact'" class="content socialprofiles center gap10">
@@ -116,7 +106,7 @@
       <div><a [href]="data.githubUrl" target="_blank"><img [src]="data.github"></a></div>
       <div><a [href]="data.instagramUrl" target="_blank"><img [src]="data.instagram"></a></div>
     </div>
-    <div *ngIf="template=='contact'" class="content center gap10 column">
+    <div *ngIf="template=='contact'" class="content center gap10 column subHeaderFont noborder">
       <div class="content center gap10">
         {{data.email}}
       </div>

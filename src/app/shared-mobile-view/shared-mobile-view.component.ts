@@ -1,11 +1,11 @@
 import { Component, Input, OnInit } from '@angular/core';
 import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
 @Component({
-  selector: 'app-shared',
-  templateUrl: './shared.component.html',
-  styleUrls: ['./shared.component.css']
+  selector: 'mobile-view',
+  templateUrl: './shared-mobile-view.component.html',
+  styleUrls: ['./shared-mobile-view.component.css']
 })
-export class SharedComponent implements OnInit {
+export class SharedMobileViewComponent implements OnInit {
 
   @Input() headerTemplate!: string;
   @Input() template!: string
@@ -56,4 +56,5 @@ export class SharedComponent implements OnInit {
   isArray(value: any): boolean {
     return Array.isArray(value);
   }
+
 }

@@ -1,0 +1,196 @@
+.coverPage {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-image: url('~src/assets/bookCover.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.innerPage {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-image: url('~src/assets/innerPage.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.center {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.widthAndHeight100 {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+#profileContent {
+  position: relative;
+  height: 60%;
+  width: 100%;
+}
+
+
+.unlock {
+  position: relative;
+  height: 8%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: end;
+}
+
+#gridFrontPage {
+  display: flex;
+  flex-direction: column;
+  gap: 1%;
+}
+
+
+#aspect-ratio-wrapper {
+  position: relative;
+}
+
+.profileImage {
+  filter: drop-shadow(10px 10px 15px white);
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+
+.unlockButton {
+  position: relative;
+  height: 100%;
+  width: 30%;
+  padding: 0%;
+  margin: 0%;
+  outline: none;
+  border: none;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 99%, 41% 51%);
+  color: black;
+  display: flex;
+}
+
+.font5vh {
+  font-size: 5vh;
+}
+
+.font3vh {
+  font-size: 3vh;
+}
+
+.paddingLeft10per {
+  padding-left: 20%;
+}
+
+.fade-in {
+  opacity: 1 !important;
+}
+
+.tagLineContainer {
+  position: relative;
+  height: 30%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.tagLine {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10%;
+  height: 50%;
+  width: 100%;
+}
+
+.name {
+  color: white;
+  display: flex;
+  justify-content: center;
+  white-space: pre;
+  animation: blink-cursor 0.7s step-end infinite;
+  font-weight: bold;
+}
+
+.profession,
+.current {
+  color: white;
+  opacity: 0;
+  transition: opacity 1s ease-in;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar {
+  position: relative;
+  height: 8%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.toolButton {
+  position: relative;
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.tool-button {
+  position: relative;
+  background-color: transparent;
+  color: white;
+  width: 100%;
+  height: 100%;
+  margin: 0%;
+  padding: 0%;
+  outline: none;
+  border: none;
+}
+
+.content {
+  position: relative;
+  height: 92%;
+  width: 94%;
+  overflow-y: auto;
+}
+
+@media screen and (orientation:portrait) and (min-width:350px) and (max-width:500px) {
+  .portraitContainer {
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@media screen and (orientation:portrait) and (min-width:501px) and (max-width:800px) {
+  .portraitContainer {
+    position: relative;
+    height: 95%;
+    width: 95%;
+  }
+}
+
+@media screen and (orientation:portrait) and (min-width:801px) and (max-width:1200px) {
+  .portraitContainer {
+    position: relative;
+    height: 95%;
+    width: 80%;
+  }
+}

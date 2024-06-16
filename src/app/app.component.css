@@ -37,7 +37,7 @@
   transition: transform 1s;
 }
 
-.middle{
+.middle {
   border-right: 1px solid white;
 }
 
@@ -49,7 +49,7 @@
   transform: rotateY(180deg);
 }
 
-.flexDirectionColumn{
+.flexDirectionColumn {
   flex-direction: column;
 }
 
@@ -57,15 +57,15 @@
   opacity: 1 !important;
 }
 
-.mirror{
+.mirror {
   transform: scaleX(-1);
 }
 
-.rotate-90deg{
+.rotate-90deg {
   transform: rotate(90deg);
 }
 
-.innerPage{
+.innerPage {
   position: relative;
   height: 100%;
   width: 100%;
@@ -78,7 +78,7 @@
   color: black;
 }
 
-.coverPage{
+.coverPage {
   position: relative;
   height: 100%;
   width: 100%;
@@ -91,7 +91,7 @@
   color: white;
 }
 
-.contentContainer{
+.contentContainer {
   position: relative;
   height: 98%;
   width: 90%;
@@ -103,7 +103,8 @@
   flex-direction: column;
 }
 
-.profileContainer, .tagLineContainer{
+.profileContainer,
+.tagLineContainer {
   position: relative;
   height: 45%;
   width: 100%;
@@ -112,14 +113,14 @@
   gap: 10%;
 }
 
-.unlockContainer{
+.unlockContainer {
   position: relative;
   height: 10%;
   width: 100%;
   display: flex;
 }
 
-.unlockContent{
+.unlockContent {
   position: relative;
   height: 100%;
   width: 30%;
@@ -139,14 +140,14 @@
   align-items: flex-end;
 }
 
-.lockContainer{
+.lockContainer {
   position: relative;
   height: 5%;
   width: 100%;
   display: flex;
 }
 
-.lockContent{
+.lockContent {
   position: relative;
   height: 200%;
   width: 30%;
@@ -168,7 +169,7 @@
   transform: rotate(270deg);
 }
 
-.profileContent{
+.profileContent {
   position: relative;
   height: 250px;
   width: 250px;
@@ -177,7 +178,8 @@
   transition: opacity 1s ease-in;
 }
 
- .profession, .current {
+.profession,
+.current {
   font-size: large;
   opacity: 0;
   transition: opacity 1s ease-in;
@@ -195,15 +197,26 @@
   font-weight: bold;
 }
 
-#content{
+#content {
   position: relative;
   height: 95%;
   width: 100%;
 }
 
 @keyframes blink-cursor {
-  from { border-right-color: black; }
-  to { border-right-color: transparent; }
+  from {
+    border-right-color: black;
+  }
+
+  to {
+    border-right-color: transparent;
+  }
 }
 
-
+@media screen and (orientation: portrait) {
+  .portrait-view {
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
+}

@@ -16,14 +16,14 @@
 .header {
   display: flex;
   height: max-content;
-  font-size: xx-large;
+  font-weight: bold;
   flex-direction: row;
   padding-top: 2%;
   padding-bottom: 2%;
   justify-content: center;
   gap: 10%;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+  border-top: 0.7vh solid black;
+  border-bottom: 0.7vh solid black;
   color: black;
 }
 
@@ -33,14 +33,13 @@
   width: 100%;
   height: 50%;
   flex-direction: column;
-  gap: 12px;
+  gap: 2vh;
   justify-content: center;
 }
 
 .center {
   width: 100%;
   justify-content: center;
-  font-size: large;
   display: flex;
 }
 
@@ -57,11 +56,10 @@
 .emailButton {
   color: white;
   background-color: black;
-  font-size: large;
   border: none;
   outline: none;
-  border-radius: 5px;
-  padding: 5px;
+  border-radius: 1vh;
+  padding: 2vh;
 }
 
 .gap10 {
@@ -82,7 +80,6 @@
 }
 
 .header-medium {
-  font-size: medium;
   width: 100%;
 
 }
@@ -91,15 +88,10 @@
   font-weight: bold;
 }
 
-.subCotentContainer {
-  height: max-content;
-  gap: 10px;
-}
-
 #content {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 3vh;
 }
 
 .full-width {
@@ -112,17 +104,17 @@
   justify-content: center;
   width: 100%;
   position: relative;
-  gap: 10px;
+  gap: 2vh;
 }
 
 .skillContainer {
   display: flex;
   justify-content: center;
   flex-direction: row;
-  gap: 10px;
+  gap: 2vh;
   width: 100%;
   position: relative;
-  padding: 10px;
+  padding: 2vh;
   flex-wrap: wrap;
 }
 
@@ -144,7 +136,7 @@
   margin: 0%;
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 1.5vh;
 }
 
 .example-spacer {
@@ -161,28 +153,43 @@
   flex-direction: column;
 }
 
-.gap15px {
-  gap: 15px;
+
+.gap2vh {
+  gap: 2vh;
 }
 
-.gap10px {
-  gap: 10px;
-}
-
-.medium {
-  font-size: medium;
-}
-
-.gap30px {
-  gap: 30px;
-}
-
-.border-top-bottom {
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+.gap4vh {
+  gap: 4vh;
 }
 
 .padding-top-bottom {
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+}
+
+.mainHeaderFont {
+  font-size: 5vh;
+}
+
+.subHeaderFont {
+  font-size: 3.5vh;
+  border-bottom: 0.5vh solid black
+}
+
+.subSubHeaderFont {
+  font-size: 2.5vh;
+}
+
+.subSubHeaderBorder {
+  border-top: 0.3vh solid black;
+  border-bottom: 0.3vh solid black;
+}
+
+.noborder {
+  border: none;
+}
+
+.imgIcons {
+  height: 10vh;
+  width: 10vh;
 }

@@ -1,13 +1,16 @@
 {
   "profile": {
-    "profileImage": "../assets/harshal.png",
+    "profileImage": "../../../assets/harshal.png",
     "profession": "Software Engineer | FullStack Developer",
     "current": "Persistent System"
   },
   "icons": {
     "lock": "lock",
     "openLock": "lock_open",
-    "star": "star"
+    "star": "star",
+    "home": "home",
+    "project": "tactic",
+    "contacts": "contacts"
   },
   "headers": [
     "RESUME",
@@ -18,14 +21,6 @@
     {
       "header": "About Me",
       "content": "I am a dedicated Full Stack Developer with 2.5 years of experience specializing in Angular and Spring Boot. My passion lies in creating robust, scalable, and user-friendly web applications. With a strong foundation in both front-end and back-end technologies, I deliver comprehensive solutions that meet both user needs and business requirements."
-    },
-    {
-      "header": "Front-End Expertise",
-      "content": "My front-end skills are anchored in Angular, where I excel in building dynamic and responsive user interfaces. I am proficient in TypeScript, JavaScript, HTML, CSS, and Web Components. My experience includes integrating RESTful APIs, ensuring seamless communication between the client and server, and developing intuitive interfaces that enhance user experiences."
-    },
-    {
-      "header": "Back-End Proficiency",
-      "content": "On the back-end, I leverage Spring Boot to create efficient and secure server-side applications. My expertise extends to Java, Java Collections, Spring Data JPA, MySQL, MongoDB, and Firebase. I design and implement scalable architectures that support complex business logic and provide reliable performance."
     },
     {
       "header": "Core Strengths",
@@ -48,19 +43,19 @@
       "header": "Skills",
       "content": [
         {
-          "header": "Projramming Language",
+          "header": "Programming Language",
           "content": [
             {
               "header": "C",
-              "content": "../../../assets/skills/c.svg"
+              "content": "../../../../../assets/skills/c.svg"
             },
             {
               "header": "C++",
-              "content": "../../../assets/skills/c++.svg"
+              "content": "../../../../../assets/skills/c++.svg"
             },
             {
               "header": "Java",
-              "content": "../../../assets/skills/java.svg"
+              "content": "../../../../../assets/skills/java.svg"
             }
           ]
         },
@@ -69,27 +64,27 @@
           "content": [
             {
               "header": "HTML",
-              "content": "../../../assets/skills/html.svg"
+              "content": "../../../../../assets/skills/html.svg"
             },
             {
               "header": "CSS3",
-              "content": "../../../assets/skills/css.svg"
+              "content": "../../../../../assets/skills/css.svg"
             },
             {
               "header": "Javascript",
-              "content": "../../../assets/skills/javascript.svg"
+              "content": "../../../../../assets/skills/javascript.svg"
             },
             {
               "header": "Typescript",
-              "content": "../../../assets/skills/typescript.svg"
+              "content": "../../../../../assets/skills/typescript.svg"
             },
             {
               "header": "Angular",
-              "content": "../../../assets/skills/angular.svg"
+              "content": "../../../../../assets/skills/angular.svg"
             },
             {
               "header": "NPM",
-              "content": "../../../assets/skills/npm.svg"
+              "content": "../../../../../assets/skills/npm.svg"
             }
           ]
         },
@@ -98,29 +93,76 @@
           "content": [
             {
               "header": "Spring Boot",
-              "content": "../../../assets/skills/springBoot.svg"
+              "content": "../../../../../assets/skills/springBoot.svg"
             },
             {
               "header": "RestApi's",
-              "content": "../../../assets/skills/restApi.png"
+              "content": "../../../../../assets/skills/restApi.png"
             },
             {
               "header": "MySQL",
-              "content": "../../../assets/skills/mysql.svg"
+              "content": "../../../../../assets/skills/mysql.svg"
             },
             {
               "header": "Postgres",
-              "content": "../../../assets/skills/postgres.svg"
+              "content": "../../../../../assets/skills/postgres.svg"
             },
             {
               "header": "MongoDB",
-              "content": "../../../assets/skills/mongodb.svg"
+              "content": "../../../../../assets/skills/mongodb.svg"
             },
             {
               "header": "Firebase",
-              "content": "../../../assets/skills/firebase.svg"
+              "content": "../../../../../assets/skills/firebase.svg"
             }
           ]
+        }
+      ]
+    },
+    {
+      "header": "Employment",
+      "content": [
+        {
+          "firmName": "Persistent Systems Ltd.",
+          "location": "Pune",
+          "designation": "Software Engineer",
+          "timePeriod": "June-2022 - Current",
+          "content": {
+            "header": "Roles and Responsibilities:",
+            "content": [
+              "Collaborating with stakeholders to gather and refine project requirements.",
+              "Understanding specific needs and expectations for the user interface and user experience.",
+              "Evaluating the feasibility of various design options.",
+              "Ensuring alignment with project goals.",
+              "Documenting all findings and requirements to maintain clear communication.",
+              "Tracking and updating work regularly in Jira to ensure transparency and progress monitoring.",
+              "Writing clean, maintainable, and efficient code to implement required functionalities.",
+              "Utilizing version control with GitHub to document and integrate code changes smoothly.",
+              "Providing regular status updates and task management in Jira.",
+              "Conducting developer testing to identify and fix bugs early.",
+              "Handling improvement tickets and contributing to project documentation.",
+              "Collaborating with team members and approving GitLab merge requests to maintain code "
+            ]
+          }
+        },
+        {
+          "firmName": "Persistent Systems Ltd.",
+          "location": "Pune",
+          "designation": "Associate Software Engineer",
+          "timePeriod": "Dec-2021 - June-2022",
+          "content": {
+            "header": "Roles and Responsibilities:",
+            "content": [
+              "During my learning internship at Persistent Systems Limited, I had the opportunity to work alongside experienced professionals and gain hands-on experience in various aspects of the industry. My responsibilities and achievements include:",
+              "Worked with Java Core, Java Collections, Spring MVC, Spring Security, Spring Boot, HTML5, CSS3, JavaScript, TypeScript, Angular, Responsive Web Design, MySQL, Oracle Database, MongoDB, and DBMS.",
+              "Gained experience in project management and industry-specific software and tools.",
+              "Learned to work effectively as part of a team.",
+              "Attended industry events and conferences to stay updated on new trends and developments.",
+              "Improved communication, time management, and problem-solving skills.",
+              "Received regular feedback from my supervisor and colleagues, identifying areas for improvement and setting professional development goals.",
+              "This internship provided me with valuable practical skills, knowledge, and industry insights that will serve me well as I pursue a career in this field."
+            ]
+          }
         }
       ]
     },
@@ -133,11 +175,11 @@
     "header": "Contact with mail",
     "phoneNumber": "+91 8669073711",
     "email": "charshal40@gmail.com",
-    "linkedIn": "../../../assets/linkedIn.svg",
+    "linkedIn": "../../../../../assets/linkedIn.svg",
     "linkedInUrl": "https://www.linkedin.com/in/harshal-chopade-215538152/",
-    "github": "../../../assets/github.svg",
+    "github": "../../../../../assets/github.svg",
     "githubUrl": "https://github.com/harshu1210",
-    "instagram": "../../../assets/instagram.svg",
+    "instagram": "../../../../../assets/instagram.svg",
     "instagramUrl": "https://www.instagram.com/_harshu12/?next=%2F"
   }
 }
