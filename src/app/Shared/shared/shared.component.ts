@@ -18,7 +18,6 @@ export class SharedComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    console.log(this.data)
   }
 
 
@@ -37,7 +36,6 @@ export class SharedComponent implements OnInit {
           .then((result: EmailJSResponseStatus) => {
             window.alert("Email Sent Successfully");
           }, (error) => {
-            console.error('Error sending email:', error);
             window.alert("Failed to send email. Please try again later.");
           });
       } else {

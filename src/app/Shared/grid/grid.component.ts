@@ -38,7 +38,6 @@ export class GridComponent implements OnInit {
     if (gridFrontPage) {
       gridFrontPage.style.height = screenHeight * 0.50 + "px";
       gridFrontPage.style.width = gridFrontPage.style.height
-      console.log(gridFrontPage.style.height)
     }
   }
 
