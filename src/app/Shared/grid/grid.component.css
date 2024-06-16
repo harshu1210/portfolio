@@ -188,7 +188,7 @@
   }
 }
 
-@media screen and (orientation:portrait) and (min-width:801px) and (max-width:1200px) {
+@media screen and (orientation:portrait) and (min-width:801px){
   .portraitContainer {
     position: relative;
     height: 95%;
