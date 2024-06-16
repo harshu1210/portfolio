@@ -8,7 +8,7 @@ import * as base from '../../../assets/config/backup.json'
 export class GridComponent implements OnInit {
 
   base: any = base;
-  page: boolean = true;
+  page: boolean = false;
   displayText: string = '';
   fullText: string = 'HARSHAL CHOPADE';
   currentIndex: number = 0;
