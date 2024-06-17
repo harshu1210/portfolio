@@ -5,7 +5,7 @@ import * as base from '../../../assets/config/backup.json'
   templateUrl: './grid.component.html',
   styleUrls: ['./grid.component.css']
 })
-export class GridComponent implements OnInit {
+export class ResponsiveBookTemplate implements OnInit {
 
   base: any = base;
   page: boolean = false;

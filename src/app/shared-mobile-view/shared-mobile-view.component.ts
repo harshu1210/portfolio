@@ -5,7 +5,7 @@ import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
   templateUrl: './shared-mobile-view.component.html',
   styleUrls: ['./shared-mobile-view.component.css']
 })
-export class SharedMobileViewComponent implements OnInit {
+export class ResponsiveSharedBookTemplate implements OnInit {
 
   @Input() headerTemplate!: string;
   @Input() template!: string

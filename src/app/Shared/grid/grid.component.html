@@ -93,6 +93,9 @@
       <div class="page middle" [ngClass]="{'middle':middlePage}">
         <div *ngIf="middlePage" class="innerPage">
           <div class="innerPageContainer">
+            <div id="lock-landscape">
+
+            </div>
             <mobile-view class="mirror" [headerTemplate]="base.headers[1]"></mobile-view>
           </div>
         </div>
@@ -105,6 +108,9 @@
       <div class="page left">
         <div *ngIf="!leftPage" class="innerPage">
           <div class="innerPageContainer">
+            <div id="lock-landscape">
+
+            </div>
             <mobile-view [headerTemplate]="base.headers[0]" [template]="template2" [data]="base.sections"></mobile-view>
           </div>
         </div>
