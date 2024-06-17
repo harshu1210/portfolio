@@ -1,8 +1,9 @@
 {
   "profile": {
     "profileImage": "../../../assets/harshal.png",
-    "profession": "Software Engineer | FullStack Developer",
-    "current": "Persistent System"
+    "profession": "Software Engineer",
+    "current": "Persistent System",
+    "developer":"FullStack Developer"
   },
   "icons": {
     "lock": "lock",

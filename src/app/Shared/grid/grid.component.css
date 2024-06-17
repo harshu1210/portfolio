@@ -185,13 +185,18 @@
     position: relative;
     height: 95%;
     width: 95%;
+    padding: 3%;
   }
 }
 
-@media screen and (orientation:portrait) and (min-width:801px){
+@media screen and (orientation:portrait) and (min-width:801px) {
   .portraitContainer {
     position: relative;
     height: 95%;
     width: 80%;
+    padding-bottom: 3%;
+    padding-top: 3%;
+    padding-left: 10%;
+    padding-right: 10%;
   }
 }

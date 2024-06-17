@@ -1,4 +1,4 @@
-<div class="portraitContainer center">
+<div class="portraitContainer">
   <div class="coverPage" id="gridFrontPage" *ngIf="!page">
     <div class="widthAndHeight100" id="profileContent">
       <div id="aspect-ratio-wrapper" class="center">
@@ -18,6 +18,9 @@
         <div class="name font5vh" [ngClass]="{'fade-in': isNameVisible}">{{ displayText }}</div>
         <div class="profession font3vh" [ngClass]="{'fade-in': isProfessionVisible}">
           {{base.profile.profession}}
+        </div>
+        <div class="profession font3vh" [ngClass]="{'fade-in': isProfessionVisible}">
+          {{base.profile.developer}}
         </div>
         <div class="current font3vh" [ngClass]="{'fade-in': isCurrentVisible}">
           {{base.profile.current}}
