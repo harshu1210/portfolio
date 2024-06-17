@@ -1,3 +1,27 @@
+.font5vh {
+  font-size: 5vh;
+}
+
+.font4Halfvh {
+  font-size: 4.5vh;
+}
+
+.font4vh {
+  font-size: 4vh
+}
+
+.font3Halfvh {
+  font-size: 3.5vh
+}
+
+.font3vh {
+  font-size: 3vh;
+}
+
+.font2Half {
+  font-size: 2vh;
+}
+
 .coverPage {
   position: relative;
   height: 100%;
@@ -78,14 +102,6 @@
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 99%, 41% 51%);
   color: black;
   display: flex;
-}
-
-.font5vh {
-  font-size: 5vh;
-}
-
-.font3vh {
-  font-size: 3vh;
 }
 
 .paddingLeft10per {
@@ -172,11 +188,140 @@
   overflow-y: auto;
 }
 
+
+/* LandScape CSS */
+
+.book-container {
+  perspective: 1000px;
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.book {
+  position: relative;
+  width: 28%;
+  height: 80%;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+
+.page {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url('~src/assets/bookCover.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.left {
+  transform-origin: left;
+  transform: rotateY(0deg);
+  transition: transform 2s;
+}
+
+.right {
+  transform-origin: right;
+  transform: rotateY(0deg);
+  transition: transform 1s;
+}
+
+.middle {
+  border-right: 1px solid white;
+}
+
+.book-container.open .left {
+  transform: rotateY(-180deg);
+}
+
+.book-container.open .right {
+  transform: rotateY(180deg);
+}
+
+.flexDirectionColumn {
+  flex-direction: column;
+}
+
+.fade-in {
+  opacity: 1 !important;
+}
+
+.mirror {
+  transform: scaleX(-1);
+}
+
+.rotate-90deg {
+  transform: rotate(90deg);
+}
+
+#coverPageContainer {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#aspect-ratio-wrapper-landscape {
+  position: relative;
+}
+
+#profileContentLandscape {
+  position: relative;
+  height: 60%;
+  width: 100%;
+}
+
+.innerPageContainer {
+  position: relative;
+  height: 98%;
+  width: 94%;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  overflow: auto;
+}
+
+#lock-landscape {
+  position: relative;
+  width: 100%;
+  height: 10%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  visibility: visible;
+}
+
+#lock-landscape {
+  position: relative;
+  width: 100%;
+  height: 10%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  visibility: visible;
+}
+
 @media screen and (orientation:portrait) and (min-width:350px) and (max-width:500px) {
   .portraitContainer {
     position: relative;
     height: 100%;
     width: 100%;
+  }
+
+  .landscapeContainer {
+    display: none;
+    visibility: hidden;
   }
 }
 
@@ -186,6 +331,11 @@
     height: 95%;
     width: 95%;
     padding: 3%;
+  }
+
+  .landscapeContainer {
+    display: none;
+    visibility: hidden;
   }
 }
 
@@ -198,5 +348,87 @@
     padding-top: 3%;
     padding-left: 10%;
     padding-right: 10%;
+    display: flex;
+    visibility: visible;
+  }
+
+  .landscapeContainer {
+    display: none;
+    visibility: none;
+  }
+
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: landscape) {
+
+  .portraitContainer {
+    display: none;
+    visibility: hidden;
+  }
+
+  .landscapeContainer {
+    display: flex;
+    visibility: visible;
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
+
+  .nameFont {
+    font-size: 3vh;
+  }
+
+  .professionFont {
+    font-size: 2vh;
+  }
+
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1540px) and (orientation: landscape) {
+
+  .portraitContainer {
+    display: none;
+    visibility: hidden;
+
+  }
+
+  .landscapeContainer {
+    display: flex;
+    visibility: visible;
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
+
+  .nameFont {
+    font-size: 3.5vh;
+  }
+
+  .professionFont {
+    font-size: 2.5vh;
+  }
+}
+
+@media only screen and (min-device-width: 1025px) and (orientation: landscape) {
+
+  .portraitContainer {
+    display: none;
+    visibility: hidden;
+  }
+
+  .landscapeContainer {
+    display: flex;
+    visibility: visible;
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
+
+  .nameFont {
+    font-size: 4vh;
+  }
+
+  .professionFont {
+    font-size: 3vh;
   }
 }

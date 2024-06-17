@@ -1,4 +1,4 @@
-<div class="mainContentContainer">
+<div class="mainContentContainer" [ngClass]="{'mirror':headerTemplate!=undefined && headerTemplate!='PROJECTS'}">
   <div class="header" *ngIf="headerTemplate!=undefined">
     <div>
       <span class="material-symbols-outlined mainHeaderFont">
@@ -102,9 +102,9 @@
       </div>
     </form>
     <div *ngIf="template=='contact'" class="content socialprofiles center gap10">
-      <div><a [href]="data.linkedInUrl" target="_blank"><img [src]="data.linkedIn"></a></div>
-      <div><a [href]="data.githubUrl" target="_blank"><img [src]="data.github"></a></div>
-      <div><a [href]="data.instagramUrl" target="_blank"><img [src]="data.instagram"></a></div>
+      <div><a [href]="data.linkedInUrl" target="_blank"><img [src]="data.linkedIn" class="imgIcons"></a></div>
+      <div><a [href]="data.githubUrl" target="_blank"><img [src]="data.github" class="imgIcons"></a></div>
+      <div><a [href]="data.instagramUrl" target="_blank"><img [src]="data.instagram" class="imgIcons"></a></div>
     </div>
     <div *ngIf="template=='contact'" class="content center gap10 column subHeaderFont noborder">
       <div class="content center gap10">
@@ -115,7 +115,6 @@
       </div>
     </div>
     <div>
-
     </div>
   </div>
 </div>

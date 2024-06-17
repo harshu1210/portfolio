@@ -68,3 +68,78 @@
     </div>
   </div>
 </div>
+
+<div class="landscapeContainer">
+  <div class="book-container" [class.open]="isOpen">
+    <div class="book">
+      <div class="page right">
+        <div *ngIf="rightPage" class="innerPage">
+          <div class="innerPageContainer">
+            <div id="lock-landscape">
+              <span *ngIf="base.headers[2]=='CONTACT'" (click)="toggleBook()"
+                class="material-symbols-outlined nameFont">
+                lock
+              </span>
+            </div>
+            <mobile-view [headerTemplate]="base.headers[2]" [template]="template1" [data]="base.contact"></mobile-view>
+          </div>
+        </div>
+        <div *ngIf="!rightPage" class="coverPage">
+          <div class="coverPageContainer">
+
+          </div>
+        </div>
+      </div>
+      <div class="page middle" [ngClass]="{'middle':middlePage}">
+        <div *ngIf="middlePage" class="innerPage">
+          <div class="innerPageContainer">
+            <mobile-view class="mirror" [headerTemplate]="base.headers[1]"></mobile-view>
+          </div>
+        </div>
+        <div *ngIf="!middlePage" class="coverPage">
+          <div class="coverPageContainer">
+
+          </div>
+        </div>
+      </div>
+      <div class="page left">
+        <div *ngIf="!leftPage" class="innerPage">
+          <div class="innerPageContainer">
+            <mobile-view [headerTemplate]="base.headers[0]" [template]="template2" [data]="base.sections"></mobile-view>
+          </div>
+        </div>
+        <div *ngIf="leftPage" class="coverPage">
+          <div id="coverPageContainer">
+            <div class="widthAndHeight100" id="profileContentLandscape">
+              <div id="aspect-ratio-wrapper-landscape" class="center">
+                <img class="widthAndHeight100 profileImage" [src]="base.profile.profileImage"
+                  [ngClass]="{'fade-in': isProfileVisible}">
+              </div>
+            </div>
+            <div class="unlock widthAndHeight100">
+              <button class="unlockButton innerPage" (click)="toggleBook()">
+                <span class="material-symbols-outlined center nameFont paddingLeft10per">
+                  {{base.icons.openLock}}
+                </span>
+              </button>
+            </div>
+            <div class="tagLineContainer widthAndHeight100">
+              <div class="tagLine">
+                <div class="name nameFont" [ngClass]="{'fade-in': isNameVisible}">{{ displayText }}</div>
+                <div class="profession professionFont" [ngClass]="{'fade-in': isProfessionVisible}">
+                  {{base.profile.profession}}
+                </div>
+                <div class="profession professionFont" [ngClass]="{'fade-in': isProfessionVisible}">
+                  {{base.profile.developer}}
+                </div>
+                <div class="current professionFont" [ngClass]="{'fade-in': isCurrentVisible}">
+                  {{base.profile.current}}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -21,6 +21,10 @@ export class GridComponent implements OnInit {
   resumeFlag: boolean = true;
   projectsFlag: boolean = false;
   contactsFlag: boolean = false;
+  isOpen: boolean = false;
+  leftPage: boolean = true;
+  middlePage: boolean = false;
+  rightPage: boolean = false;
 
   constructor(private cdr: ChangeDetectorRef) { }
 
@@ -31,23 +35,55 @@ export class GridComponent implements OnInit {
   @HostListener('window:resize', ['$event'])
   handleResize(event?: Event): void {
     let screenWidth, screenHeight, aspect_ratio
-    screenWidth = window.innerWidth;
-    screenHeight = window.innerHeight;
-    aspect_ratio = screenWidth / screenHeight;
-    const gridFrontPage = document.getElementById("aspect-ratio-wrapper");
-    if (gridFrontPage) {
-      gridFrontPage.style.height = screenHeight * 0.50 + "px";
-      gridFrontPage.style.width = gridFrontPage.style.height
+    if (window.screen.orientation.type == 'portrait-primary') {
+      screenWidth = window.innerWidth;
+      screenHeight = window.innerHeight;
+      if (document.getElementById("aspect-ratio-wrapper")) {
+        const gridFrontPage = document.getElementById("aspect-ratio-wrapper");
+        if (gridFrontPage) {
+          if (screenWidth >= screenHeight * 0.5) {
+            gridFrontPage.style.height = screenHeight * 0.50 + "px";
+            gridFrontPage.style.width = gridFrontPage.style.height
+          } else {
+            gridFrontPage.style.height = screenWidth + "px";
+            gridFrontPage.style.width = gridFrontPage.style.height
+          }
+        }
+      }
+    } else {
+      if (document.getElementById('profileContentLandscape')) {
+        const element = document.getElementById('profileContentLandscape');
+        if (element) {
+          const computedStyle = getComputedStyle(element);
+          screenWidth = parseInt(computedStyle.width);
+          screenHeight = parseInt(computedStyle.height);
+          if (document.getElementById("aspect-ratio-wrapper-landscape")) {
+            const gridFrontPage = document.getElementById("aspect-ratio-wrapper-landscape");
+            if (gridFrontPage) {
+              if (screenWidth >= screenHeight) {
+                gridFrontPage.style.height = screenHeight * 0.9 + "px";
+                gridFrontPage.style.width = gridFrontPage.style.height
+                console.log("if");
+              } else {
+                gridFrontPage.style.height = screenWidth + "px";
+                gridFrontPage.style.width = gridFrontPage.style.height
+              }
+            }
+          }
+        }
+      }
     }
   }
 
   showProfileImage() {
     setTimeout(() => {
-      this.handleResize();
+      this.handleResize()
+    }, 1)
+    setTimeout(() => {
       this.isProfileVisible = true;
       this.cdr.detectChanges();
       this.typeText();
-    }, 1000);
+    }, 1000)
   }
 
   typeText() {
@@ -87,6 +123,32 @@ export class GridComponent implements OnInit {
       this.resumeFlag = false;
       this.contactsFlag = true;
     }
+  }
+
+  toggleBook() {
+    this.isOpen = !this.isOpen
+    if (this.isOpen == true) {
+      this.open();
+    } else {
+      this.close();
+    }
+  }
+
+  open() {
+    setTimeout(() => {
+      this.leftPage = !this.leftPage;
+      this.middlePage = !this.middlePage;
+      this.rightPage = !this.rightPage;
+    }, 500)
+  }
+
+  close() {
+    setTimeout(() => {
+      this.rightPage = !this.rightPage;
+      this.middlePage = !this.middlePage;
+      this.leftPage = !this.leftPage;
+      this.showProfileImage()
+    }, 500)
   }
 
 }
