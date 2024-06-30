@@ -126,8 +126,31 @@
         {
           "firmName": "Persistent Systems Ltd.",
           "location": "Pune",
+          "designation": "Senior Software Engineer",
+          "timePeriod": "July-2024 - Current",
+          "content": {
+            "header": "Roles and Responsibilities:",
+            "content": [
+              "Collaborating with stakeholders to gather and refine project requirements.",
+              "Understanding specific needs and expectations for the user interface and user experience.",
+              "Evaluating the feasibility of various design options.",
+              "Ensuring alignment with project goals.",
+              "Documenting all findings and requirements to maintain clear communication.",
+              "Tracking and updating work regularly in Jira to ensure transparency and progress monitoring.",
+              "Writing clean, maintainable, and efficient code to implement required functionalities.",
+              "Utilizing version control with GitHub to document and integrate code changes smoothly.",
+              "Providing regular status updates and task management in Jira.",
+              "Conducting developer testing to identify and fix bugs early.",
+              "Handling improvement tickets and contributing to project documentation.",
+              "Collaborating with team members and approving GitLab merge requests to maintain code "
+            ]
+          }
+        },
+        {
+          "firmName": "Persistent Systems Ltd.",
+          "location": "Pune",
           "designation": "Software Engineer",
-          "timePeriod": "June-2022 - Current",
+          "timePeriod": "June-2022 - June-2024",
           "content": {
             "header": "Roles and Responsibilities:",
             "content": [

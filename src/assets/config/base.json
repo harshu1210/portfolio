@@ -1,15 +1,16 @@
 {
   "profile": {
-    "profileImage": "../assets/harshal.png",
-    "profession": "Software Engineer | FullStack Developer",
-    "current": "Persistent System"
+    "profileImage": "../../../assets/harshal.png",
+    "profession": "Software Engineer",
+    "current": "Persistent System",
+    "developer":"FullStack Developer"
   },
   "icons": {
     "lock": "lock",
     "openLock": "lock_open",
     "star": "star",
     "home": "home",
-    "project": "tactics",
+    "project": "tactic",
     "contacts": "contacts"
   },
   "headers": [
@@ -47,15 +48,15 @@
           "content": [
             {
               "header": "C",
-              "content": "../../../assets/skills/c.svg"
+              "content": "../../../../../assets/skills/c.svg"
             },
             {
               "header": "C++",
-              "content": "../../../assets/skills/c++.svg"
+              "content": "../../../../../assets/skills/c++.svg"
             },
             {
               "header": "Java",
-              "content": "../../../assets/skills/java.svg"
+              "content": "../../../../../assets/skills/java.svg"
             }
           ]
         },
@@ -64,27 +65,27 @@
           "content": [
             {
               "header": "HTML",
-              "content": "../../../assets/skills/html.svg"
+              "content": "../../../../../assets/skills/html.svg"
             },
             {
               "header": "CSS3",
-              "content": "../../../assets/skills/css.svg"
+              "content": "../../../../../assets/skills/css.svg"
             },
             {
               "header": "Javascript",
-              "content": "../../../assets/skills/javascript.svg"
+              "content": "../../../../../assets/skills/javascript.svg"
             },
             {
               "header": "Typescript",
-              "content": "../../../assets/skills/typescript.svg"
+              "content": "../../../../../assets/skills/typescript.svg"
             },
             {
               "header": "Angular",
-              "content": "../../../assets/skills/angular.svg"
+              "content": "../../../../../assets/skills/angular.svg"
             },
             {
               "header": "NPM",
-              "content": "../../../assets/skills/npm.svg"
+              "content": "../../../../../assets/skills/npm.svg"
             }
           ]
         },
@@ -93,27 +94,27 @@
           "content": [
             {
               "header": "Spring Boot",
-              "content": "../../../assets/skills/springBoot.svg"
+              "content": "../../../../../assets/skills/springBoot.svg"
             },
             {
               "header": "RestApi's",
-              "content": "../../../assets/skills/restApi.png"
+              "content": "../../../../../assets/skills/restApi.png"
             },
             {
               "header": "MySQL",
-              "content": "../../../assets/skills/mysql.svg"
+              "content": "../../../../../assets/skills/mysql.svg"
             },
             {
               "header": "Postgres",
-              "content": "../../../assets/skills/postgres.svg"
+              "content": "../../../../../assets/skills/postgres.svg"
             },
             {
               "header": "MongoDB",
-              "content": "../../../assets/skills/mongodb.svg"
+              "content": "../../../../../assets/skills/mongodb.svg"
             },
             {
               "header": "Firebase",
-              "content": "../../../assets/skills/firebase.svg"
+              "content": "../../../../../assets/skills/firebase.svg"
             }
           ]
         }
@@ -175,11 +176,11 @@
     "header": "Contact with mail",
     "phoneNumber": "+91 8669073711",
     "email": "charshal40@gmail.com",
-    "linkedIn": "../../../assets/linkedIn.svg",
+    "linkedIn": "../../../../../assets/linkedIn.svg",
     "linkedInUrl": "https://www.linkedin.com/in/harshal-chopade-215538152/",
-    "github": "../../../assets/github.svg",
+    "github": "../../../../../assets/github.svg",
     "githubUrl": "https://github.com/harshu1210",
-    "instagram": "../../../assets/instagram.svg",
+    "instagram": "../../../../../assets/instagram.svg",
     "instagramUrl": "https://www.instagram.com/_harshu12/?next=%2F"
   }
 }
