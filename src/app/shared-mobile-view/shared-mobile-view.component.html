@@ -46,8 +46,8 @@
           </div>
         </div>
       </div>
-      <div class="employment gap4vh" *ngIf="isArray(x.content)==true && x.header=='Employment'">
-        <div class="employment gap2vh" *ngFor="let item of x.content">
+      <div class="employment gap4vh" *ngIf="isArray(x.firms)==true && x.header=='Employment'">
+        <div class="employment" *ngFor="let item of x.firms">
           <div class="firm bold subSubHeaderBorder subSubHeaderFont padding-top-bottom">
             <div>
               {{item.firmName}}
@@ -57,23 +57,18 @@
               {{item.location}}
             </div>
           </div>
-          <div class="firm subSubHeaderFont">
-            <div>
-              {{item.designation}}
-            </div>
-            <span class="example-spacer"></span>
-            <div>
-              {{item.timePeriod}}
-            </div>
-          </div>
-          <div class="bold subSubHeaderFont">
-            {{item.content.header}}
-          </div>
-          <ul class="rolesResp subSubHeaderFont">
-            <li *ngFor="let x of item.content.content">
-              <b> - </b>{{x}}
-            </li>
-          </ul>
+            <ul *ngFor="let firmContent of item.content">
+              <li>
+                <div>
+                  <b>
+                    {{firmContent.designation}}
+                  </b>
+                </div>
+                <div>
+                  {{firmContent.timePeriod}}
+                </div>
+              </li>
+            </ul>
         </div>
       </div>
     </div>
@@ -82,8 +77,10 @@
   <!-- Contact Template -->
   <div class="contactDetails">
     <form (submit)="sendEmail($event)" class="formContent" *ngIf="template=='contact'">
-      <div class="center subHeaderFont noborder">
-        {{data.header}}
+      <div class="header bold noborder">
+        <div style="display: flex;align-content: center;flex-wrap: wrap;" class="subHeaderFont">
+          {{data.header}}
+        </div>
       </div>
       <div class="center subSubHeaderFont">
         <input class="full-width subSubHeaderFont" type="text" name="fromEmailAddress" [(ngModel)]="fromEmailAddress"
